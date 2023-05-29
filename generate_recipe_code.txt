@@ -1,0 +1,22 @@
+Very good, now convert this into TypeScript code. 
+
+You will have to write many functions for the machine/robot to perform every single task. Some examples are: 
+ - getNewTool(what:string):idOfTool
+ - washTool(idOfTool)
+ - getFoodItem(what:string):idOfFood
+ - preheatOven(degrees:number):Promise
+ - preheatPan(pan:idOfTool,powerPct:number):Promise
+ - chop(food:idOfFood)
+ - placeInPan(food:idOfFood,pan:idOfTool,timeRemaining:number):Promise
+You will need to come up with more yourself; use your imagination and reasoning. 
+
+The promises represent things which happen async in the background, during which time the machine should perform other tasks so as never to stand ideally by (if there is no food to prepare it can always wash something). The promises resolve when new action needs to be taken (eg. check on food in pan/oven or remove from pan/oven) or when something is ready (eg. the oven is done heating). 
+
+Actions which the machine needs to perform sync (eg. chopping something) should not return promises. 
+
+Optimize the machines work to:
+ - waste as little time as possible (as a rule of thumb don't use "await")
+ - produce as little washing up as possible by the end (cleaning as you go is encouraged) 
+ - have everything ready at the same time. 
+
+ Write the code as instructions (in the form of an array of objects) being sent to a main cookDinner() function so it can be re-used with other sets of instructions.
