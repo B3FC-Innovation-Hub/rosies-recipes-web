@@ -1,22 +1,22 @@
 {
-	"name": "rosis-recipes",
+	"name": "rosis-recipes-web",
 	"version": "1.0.0",
-	"description": "This repo contains the \"working\" parts of a simple recipe website which is hosted on Google Cloud Platform using buckets.",
+	"description": "React/TypeScript frontend for Rosie's Recipes",
 	"scripts": {
 		"build": "webpack",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/plundell/rosis-recipes.git"
+		"url": "git+https://github.com/B3FC-Innovation-Hub/rosies-recipes-web.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "GPL-3",
 	"bugs": {
-		"url": "https://github.com/plundell/rosis-recipes/issues"
+		"url": "https://github.com/B3FC-Innovation-Hub/rosies-recipes-web/issues"
 	},
-	"homepage": "https://github.com/plundell/rosis-recipes#readme",
+	"homepage": "https://github.com/B3FC-Innovation-Hub/rosies-recipes-web#readme",
 	"devDependencies": {
 		"less": "^4.1.3",
 		"less-loader": "^11.1.0",
