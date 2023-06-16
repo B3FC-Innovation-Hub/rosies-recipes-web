@@ -1,6 +1,6 @@
 # Rosie's Recipes Web Frontend
 
-We're creating a *virtual cooking assistant*: __Rosie__. 
+We're creating a *virtual cooking assistant*: __Rosie__. See the overall project [here](https://github.com/B3FC-Innovation-Hub/rosies-recipes)
 
 This is the web frontend for it. 
 
