@@ -40,7 +40,7 @@ jobs:
     #2023-06-27 palun: this job runs when pushing to main and opening/reopening/sync pull requests to main. it will however
     #                  do different things in each case, ie. somehow it knows (I can't find the config for it) that when
     #                  you open a pull request it should setup a seperate enviornment (a different url) for that code, whereas
-    #                  if you just push it will deploy to production. 
+    #                  if you just push it will deploy to production. NOTE: a push happens also when you merge a pr!
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
@@ -65,8 +65,8 @@ jobs:
     permissions:
       contents: none
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    #2023-06-27 palun: this job runs when you close a pull request without committing it. it deletes the dev environment which 
-    #                  was setup when the pull request was opened.
+    #2023-06-27 palun: this job runs when you close a pull request. NOTE: a pr is also closed when you merge it. 
+    #                  it deletes the dev environment which was setup when the pull request was opened. 
     runs-on: ubuntu-latest
     name: Close Pull Request Job
     steps:
