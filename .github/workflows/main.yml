@@ -12,12 +12,13 @@
 #    For instructions on setting up the appropriate configuration values go to https://docs.microsoft.com/azure/static-web-apps/front-end-frameworks
 name: Deploy web app to Azure Static Web Apps
 
+#2023-06-27 palun: these are all the events which trigger this script. see "if-blocks" and 
+#                  in each comments from same date in each job below 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     types: [opened, synchronize, reopened, closed] 
-    # 2023-06-27 : Nicole . what is this, what happens when a pr is triggered?
     branches: [ "main" ]
 
 # Environment variables available to all jobs and steps in this workflow
@@ -36,6 +37,10 @@ jobs:
       contents: read # for actions/checkout to fetch code
       pull-requests: write # for Azure/static-web-apps-deploy to comment on PRs
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    #2023-06-27 palun: this job runs when pushing to main and opening/reopening/sync pull requests to main. it will however
+    #                  do different things in each case, ie. somehow it knows (I can't find the config for it) that when
+    #                  you open a pull request it should setup a seperate enviornment (a different url) for that code, whereas
+    #                  if you just push it will deploy to production. 
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
@@ -60,6 +65,8 @@ jobs:
     permissions:
       contents: none
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    #2023-06-27 palun: this job runs when you close a pull request without committing it. it deletes the dev environment which 
+    #                  was setup when the pull request was opened.
     runs-on: ubuntu-latest
     name: Close Pull Request Job
     steps:
