@@ -4,8 +4,14 @@
 }
 
 .App {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  background-color: #067BC2;
   text-align: center;
   font-family: 'IBM Plex Serif Medium', Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
