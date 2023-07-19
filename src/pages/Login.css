@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+	flex: 1;
+	background-color: #00528f;
+	justify-content: space-around;
+	align-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+h1 {
+	color: #dbfe87;
+	text-align: left;
+	font-size: 5rem;
+	/* max-width: 600px; */
+	align-self: center;
+	text-shadow: 2px 2px 2px #121212;
+}
+
+p {
+	color: #dbfe87;
+	text-shadow: 10px, #121212;
+	text-align: left;
+	max-width: 600px;
+	align-self: center;
+	word-wrap: break-word;
+	font-family: "Raleway Regular";
+	font-size: large;
+	text-shadow: 2px 2px 2px #121212;
+}
+
+@media screen and (max-width: 460px) {
+	.container {
+		min-width: 320px;
+	}
+	h1 {
+		font-size: 3rem;
+		max-width: 240px;
+	}
+
+	p {
+		max-width: 240px;
+	}
+}
