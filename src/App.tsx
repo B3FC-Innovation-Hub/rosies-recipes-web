@@ -6,7 +6,7 @@ function App() {
 		<div className="App">
 			Hello world
 			<h1>
-				This is NOT a test
+				This is a test
 			</h1>
 		</div>
 	);
