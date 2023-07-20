@@ -2,6 +2,7 @@ import Button from "../../components/button/Button";
 import "./Login.css";
 import background from "../../assets/background-spheres.png";
 import Spheres from "../../components/spheres/Spheres";
+import Footer from "../../components/footer/Footer";
 
 const Login: React.FC = () => {
 	return (
@@ -23,6 +24,7 @@ const Login: React.FC = () => {
 				mollit anim id est laborum.
 			</p>
 			<Button />
+			<Footer />
 		</div>
 	);
 };
