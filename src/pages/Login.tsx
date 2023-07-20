@@ -1,12 +1,18 @@
 import Button from "../components/Button";
 import "./Login.css";
+import background from "../assets/background-spheres.png";
 
 const Login: React.FC = () => {
 	return (
 		<div className="container">
-			<h1>
+			<img
+				src={background}
+				alt="A background with circles"
+				className="image-background"
+			/>
+			<header className="header">
 				<strong>Rosie's</strong> Recipes
-			</h1>
+			</header>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
 				tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim

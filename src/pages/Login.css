@@ -8,13 +8,24 @@
 	height: 100%;
 }
 
-h1 {
+.image-background {
+	width: 100%;
+	height: inherit;
+	position: fixed;
+	image-rendering: crisp-edges;
+	/*The scaling is to achieve the same result as in the 
+	mockup but without the need to import a cropped image, which
+	doesn't work on mobile devices*/
+	transform: scale(2, 2);
+	overflow: hidden;
+}
+
+.header {
 	color: #dbfe87;
 	text-align: left;
 	font-size: 5rem;
-	/* max-width: 600px; */
 	align-self: center;
-	text-shadow: 2px 2px 2px #121212;
+	z-index: 1;
 }
 
 p {
@@ -27,18 +38,27 @@ p {
 	font-family: "Raleway Regular";
 	font-size: large;
 	text-shadow: 2px 2px 2px #121212;
+	z-index: 1;
 }
 
 @media screen and (max-width: 460px) {
 	.container {
-		min-width: 320px;
+		min-width: 280px;
 	}
-	h1 {
+	.header {
 		font-size: 3rem;
 		max-width: 240px;
 	}
 
 	p {
 		max-width: 240px;
+	}
+
+	.image-background {
+		width: min-content;
+		height: 100%;
+		transform: translate(-20%, 30%);
+		position: absolute;
+		resize: inherit;
 	}
 }
