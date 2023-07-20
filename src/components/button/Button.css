@@ -10,13 +10,13 @@ font settings, so we have to set all their css properties manually*/
 .button {
 	background-color: #dbfe87;
 	color: #121212;
-	height: 36px;
+	height: 38px;
 	font-family: "IBM Plex Serif Bold", Arial, Helvetica, sans-serif;
 	width: 220px;
 	border-width: 0;
 	border-radius: 6px;
 	font-size: medium;
-	margin: 4px;
+	margin: 2px;
 	align-self: center;
 	z-index: 1;
 }
