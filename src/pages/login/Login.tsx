@@ -1,6 +1,7 @@
-import Button from "../components/Button";
+import Button from "../../components/button/Button";
 import "./Login.css";
-import background from "../assets/background-spheres.png";
+import background from "../../assets/background-spheres.png";
+import Spheres from "../../components/spheres/Spheres";
 
 const Login: React.FC = () => {
 	return (
@@ -10,6 +11,7 @@ const Login: React.FC = () => {
 				alt="A background with circles"
 				className="image-background"
 			/>
+			<Spheres />
 			<header className="header">
 				<strong>Rosie's</strong> Recipes
 			</header>
