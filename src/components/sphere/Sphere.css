@@ -1,0 +1,14 @@
+.sphere {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 200px;
+	position: absolute;
+	/*To ensure that certain images will stay inside the circle*/
+	padding: 20px;
+}
+
+.food {
+	background-size: contain;
+	position: relative;
+}
