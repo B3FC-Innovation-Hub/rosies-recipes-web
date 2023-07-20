@@ -12,7 +12,6 @@
 	width: 100%;
 	height: inherit;
 	position: fixed;
-	image-rendering: crisp-edges;
 	/*The scaling is to achieve the same result as in the 
 	mockup but without the need to import a cropped image, which
 	doesn't work on mobile devices*/
