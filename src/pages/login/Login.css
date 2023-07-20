@@ -58,7 +58,6 @@ p {
 		width: min-content;
 		height: 100%;
 		transform: translate(-20%, 30%);
-		position: absolute;
 		resize: inherit;
 	}
 }
