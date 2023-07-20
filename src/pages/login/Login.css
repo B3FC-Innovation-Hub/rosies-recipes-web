@@ -35,7 +35,7 @@ p {
 	max-width: 600px;
 	align-self: center;
 	word-wrap: break-word;
-	font-family: "Raleway Regular";
+	font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
 	font-size: large;
 	text-shadow: 2px 2px 2px #121212;
 	z-index: 1;
