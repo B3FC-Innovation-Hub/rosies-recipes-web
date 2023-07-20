@@ -9,6 +9,10 @@ const Sphere: React.FC<SphereProps> = (props: SphereProps) => {
 				backgroundColor: props.backgroundColor,
 				width: props.width,
 				height: props.height,
+				bottom: `${props.bottom}%`,
+				top: `${props.bottom}%`,
+				left: `${props.left}%`,
+				right: `${props.right}%`,
 			}}
 		>
 			<img

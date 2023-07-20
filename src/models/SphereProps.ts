@@ -5,5 +5,7 @@ export type SphereProps = {
     height: number;
     src: string;
     bottom?: number;
-    top?: number
+    top?: number;
+    left?: number;
+    right?: number
 }
