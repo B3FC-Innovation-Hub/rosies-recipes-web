@@ -1,6 +1,6 @@
 .circles-column-right {
 	display: flex;
-	justify-content: end;
+	justify-content: flex-end;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -10,7 +10,7 @@
 
 .circles-column-left {
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	position: absolute;
 	top: 0;
 	bottom: 0;
