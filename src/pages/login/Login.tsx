@@ -3,8 +3,10 @@ import "./Login.css";
 import background from "../../assets/background-spheres.png";
 import Footer from "../../components/footer/Footer";
 import SpheresBackground from "./spheres-background/SpheresBackground";
+import { useNavigate } from "react-router-dom";
 
 const Login: React.FC = () => {
+	const navigate = useNavigate();
 	return (
 		<div className="container">
 			<img
@@ -24,7 +26,11 @@ const Login: React.FC = () => {
 					sint obcaecat cupiditat non proident, sunt in culpa qui officia
 					deserunt mollit anim id est laborum.
 				</p>
-				<Button />
+				<Button
+					title="Login with 365"
+					onClick={() => navigate("/upload")}
+					isGreen={true}
+				/>
 			</div>
 			<Footer />
 		</div>
