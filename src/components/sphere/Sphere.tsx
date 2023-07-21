@@ -10,7 +10,7 @@ const Sphere: React.FC<SphereProps> = (props: SphereProps) => {
 				width: props.width,
 				height: props.height,
 				bottom: `${props.bottom}%`,
-				top: `${props.bottom}%`,
+				top: `${props.top}%`,
 				left: `${props.left}%`,
 				right: `${props.right}%`,
 			}}
