@@ -3,7 +3,7 @@ export type SphereProps = {
     opacity?: number;
     width: number;
     height: number;
-    src: string;
+    src?: string;
     bottom?: number;
     top?: number;
     left?: number;
