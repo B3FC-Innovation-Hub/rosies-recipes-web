@@ -23,6 +23,12 @@
 }
 
 @font-face {
+	font-family: "IBM Plex Serif Light";
+	src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-Light.ttf")
+		format("truetype");
+}
+
+@font-face {
 	font-family: "Raleway regular";
 	src: url("./assets/fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
 }
