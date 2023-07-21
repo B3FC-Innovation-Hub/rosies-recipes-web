@@ -1,6 +1,7 @@
 .container {
 	display: flex;
 	flex: 1;
+	position: sticky;
 	background-color: #00528f;
 	justify-content: center;
 	align-content: center;
@@ -59,6 +60,9 @@ p {
 
 	.content-container {
 		background-color: #003c6a;
+		flex: 0 1;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		border-radius: 20px;
 		margin-top: 20px;
 		margin-bottom: 20px;
