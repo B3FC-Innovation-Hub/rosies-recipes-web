@@ -15,13 +15,17 @@ const Sphere: React.FC<SphereProps> = (props: SphereProps) => {
 				right: `${props.right}%`,
 			}}
 		>
-			<img
-				src={props.src}
-				alt="A cutting board with veggies on top"
-				className="food"
-				width={`${props.width} px`}
-				height={`${props.height} px`}
-			/>
+			{!props.src ? (
+				<></>
+			) : (
+				<img
+					src={props.src}
+					alt="A cutting board with veggies on top"
+					className="food"
+					width={`${props.width} px`}
+					height={`${props.height} px`}
+				/>
+			)}
 		</span>
 	);
 };
