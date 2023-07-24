@@ -1,6 +1,13 @@
-nav {
-    width: 100%;
+.top-bar-container {
+    width: inherit;
     display: flex;
     background-color: #E40060;
     color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.topbar-icon  {
+    padding: 4px;
 }
