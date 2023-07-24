@@ -4,6 +4,9 @@ import TopBar from "../../components/topbar/TopBar";
 import { AuthenticatedTemplate, useMsal } from "@azure/msal-react";
 import './Home.css';
 import { RedirectRequest } from "@azure/msal-browser";
+import './Home.css';
+import HomeBackground from "./home-bg/HomeBackground";
+import Footer from "../../components/footer/Footer";
 
 const Home: React.FC = () => {
 	const navigate = useNavigate();
@@ -23,27 +26,34 @@ const Home: React.FC = () => {
 		}
 	};
 	return (
-		<div className="home-container">
+		<div className="wrapper">
 			<TopBar />
-			<div className="home-container-content">
-				<h1 className="home-header">
+			<div className="home-container">
+				<HomeBackground />
+	
+				<div className="home-container-content">
+					<h1 className="home-header">
                 Your meal starts <strong>here </strong>
-				</h1>
-				<p className="home-content">
-                Did you bring your own recipes with you? Then you are in the right place . You can paste the url of your recipe or paste a whole recipe on the text boxes below.
-					<AuthenticatedTemplate>
-						<p>Signed in as: {accounts[0]?.username}</p>
-					</AuthenticatedTemplate>
-					<Button
-						title="Sign out"
-						color="pink"
-						onClick={() => logoutHandler()}
-					/>
-				</p>
-			</div>
-			<div className="button-row">
-				<Button title="Upload" color="pink" onClick={() => navigate('/')}/>
-				<Button title="Browse" color="pink" onClick={() => navigate('/')}/>
+					</h1>
+					<p className="home-content">
+               				Give me your best recipes, or browse recipes from my collection and 
+				I will provide optimized step-by-step, optimized instructions,
+				so that you do not waste any time .
+						<AuthenticatedTemplate>
+							<p>Signed in as: {accounts[0]?.username}</p>
+						</AuthenticatedTemplate>
+						<Button
+							title="Sign out"
+							color="pink"
+							onClick={() => logoutHandler()}
+						/>
+					</p>
+				</div>
+				<div className="button-row">
+					<Button title="Upload" color="pink" onClick={() => navigate('/')}/>
+					<Button title="Browse" color="pink" onClick={() => navigate('/')}/>
+				</div>
+				<Footer />
 			</div>
 		</div>
 	);
