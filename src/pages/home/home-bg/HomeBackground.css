@@ -1,0 +1,66 @@
+.stripes-container {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    z-index: 1;
+    height: inherit;
+    overflow: hidden;
+}
+
+.stripes {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: inherit;
+
+    &.darker {
+        background-color: #4E96D0;
+    }
+
+    &.dark {
+        background-color: #65A3D6
+    }
+
+    &.light {
+        background-color: #75ABDA;
+    }
+
+    &.lighter {
+        background-color: #A8CAE9;
+    }
+}
+
+/*For Firefox support*/
+
+.stripes.darker {
+    background-color: #4E96D0;
+}
+
+.stripes.dark {
+    background-color: #65A3D6
+}
+
+.stripes.light {
+    background-color: #75ABDA;
+}
+
+.stripes.lighter {
+    background-color: #A8CAE9;
+}
+
+@media screen and (max-width: 460px) {
+    .stripes {
+        width: 30%;
+    }
+
+    .images-container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+        transform: translate(100px, -60px) scale(0.7);
+    }
+}
