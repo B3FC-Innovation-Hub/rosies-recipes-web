@@ -1,4 +1,4 @@
-.container {
+.login.container {
 	display: flex;
 	flex: 1;
 	position: sticky;
@@ -10,7 +10,7 @@
 	height: 100%;
 }
 
-.image-background {
+.login.image-background {
 	width: 100%;
 	height: inherit;
 	position: fixed;
@@ -21,7 +21,7 @@
 	overflow: hidden;
 }
 
-.content-container {
+.login.content-container {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
@@ -31,7 +31,7 @@
 	z-index: 2;
 }
 
-.header {
+.login.content-header {
 	display: flex;
 	color: var(--secondary);
 	text-align: left;
@@ -41,7 +41,7 @@
 	z-index: 1;
 }
 
-p {
+.login.content-body {
 	color: var(--secondary);
 	text-align: left;
 	max-width: 400px;
@@ -54,11 +54,11 @@ p {
 }
 
 @media screen and (max-width: 460px) {
-	.container {
+	.login.container {
 		min-width: 280px;
 	}
 
-	.content-container {
+	.login.content-container {
 		background-color: var(--primary-dark);
 		flex: 0 1;
 		padding-top: 20px;
@@ -67,7 +67,7 @@ p {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
-	.header {
+	.login.content-header  {
 		align-self: flex-start;
 		max-width: 240px;
 		margin: 8px;

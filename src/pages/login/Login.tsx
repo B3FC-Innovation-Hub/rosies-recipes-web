@@ -7,18 +7,18 @@ import SpheresBackground from "./spheres-background/SpheresBackground";
 const Login: React.FC = () => {
 	
 	return (
-		<div className="container">
+		<div className="login container">
 			<img
 				src={background}
 				alt="A background with circles"
-				className="image-background"
+				className="login image-background"
 			/>
 			<SpheresBackground />
-			<div className="content-container">
-				<header className="header">
+			<div className="login content-container">
+				<header className="login content-header">
 					<strong>Rosie's</strong> Recipes
 				</header>
-				<p>
+				<p className="login content-body">
 					Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
 					tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
 					veniam, quis nostrum exercitationem ullam corporis suscipit Excepteur
