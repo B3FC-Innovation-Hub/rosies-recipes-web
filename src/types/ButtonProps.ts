@@ -1,8 +1,9 @@
 export type ButtonProps = {
-    title: string;
+    title?: string;
     onClick?: () => void | Promise<void>; // optional, but recommended to handle async operations
-    //For the places where we will use green buttons
+    //To specify which color the button will be
     color: string;
-    //FIXME: add correct typing
-    icon?: any;
+    //to pass the fab class directly to fab buttons
+    fab?: string;
+    icon?: string;
 }
