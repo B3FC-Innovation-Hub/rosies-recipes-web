@@ -1,9 +1,9 @@
-import { ButtonProps } from "../../models/ButtonProps";
+import { ButtonProps } from "../../types/ButtonProps";
 import "./Button.css";
 
 const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 	return (
-		<button type="button" className={props.isGreen ? "button-green" : 'button-pink'}onClick={props.onClick}>
+		<button type="button" className={`button-${props.color}`}onClick={props.onClick}>
 			{props.title}
 		</button>
 	);
