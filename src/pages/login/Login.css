@@ -2,7 +2,7 @@
 	display: flex;
 	flex: 1;
 	position: sticky;
-	background-color: #00528f;
+	background-color: var(--primary);
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
@@ -33,7 +33,7 @@
 
 .header {
 	display: flex;
-	color: #dbfe87;
+	color: var(--secondary);
 	text-align: left;
 	font-size: 5rem;
 	align-self: flex-start;
@@ -42,14 +42,14 @@
 }
 
 p {
-	color: #dbfe87;
+	color: var(--secondary);
 	text-align: left;
 	max-width: 400px;
 	align-self: center;
 	word-wrap: break-word;
-	font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
+	font-family: var(--raleway-regular);
 	font-size: large;
-	text-shadow: 2px 2px 2px #121212;
+	text-shadow: 2px 2px 2px var(--black);
 	z-index: 1;
 }
 
@@ -59,7 +59,7 @@ p {
 	}
 
 	.content-container {
-		background-color: #003c6a;
+		background-color: var(--primary-dark);
 		flex: 0 1;
 		padding-top: 20px;
 		padding-bottom: 20px;
