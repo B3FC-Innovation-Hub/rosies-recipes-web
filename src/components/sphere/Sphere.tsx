@@ -1,5 +1,5 @@
 import "./Sphere.css";
-import { SphereProps } from "../../models/SphereProps";
+import { SphereProps } from "../../types/SphereProps";
 
 const Sphere: React.FC<SphereProps> = (props: SphereProps) => {
 	return (
