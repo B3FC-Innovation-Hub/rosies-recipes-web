@@ -3,10 +3,9 @@ import "./Login.css";
 import background from "../../assets/background-spheres.png";
 import Footer from "../../components/footer/Footer";
 import SpheresBackground from "./spheres-background/SpheresBackground";
-import { useNavigate } from "react-router-dom";
 
 const Login: React.FC = () => {
-	const navigate = useNavigate();
+	
 	return (
 		<div className="container">
 			<img
@@ -28,7 +27,7 @@ const Login: React.FC = () => {
 				</p>
 				<Button
 					title="Login with 365"
-					isGreen={true}
+					color="green"
 				/>
 			</div>
 			<Footer />
