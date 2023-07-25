@@ -28,7 +28,6 @@ const Login: React.FC = () => {
 				</p>
 				<Button
 					title="Login with 365"
-					onClick={() => navigate("/upload")}
 					isGreen={true}
 				/>
 			</div>
