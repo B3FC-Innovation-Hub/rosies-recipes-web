@@ -71,6 +71,7 @@ body {
 	/*These are the font families we'll define globally. We'll add fallbacks in the same variables*/
 
 	/*IBM Plex Serif */
+	--font-ibm-light: "IBM Plex Serif Light", Arial, Helvetica, sans-serif;
 	--font-ibm-regular: "IBM Plex Serif Regular",  Arial, Helvetica, sans-serif;
 	--font-ibm-medium: "IBM Plex Serif Medium",  Arial, Helvetica, sans-serif;
 	--font-ibm-semibold: "IBM Plex Serif SemiBold",  Arial, Helvetica, sans-serif;
