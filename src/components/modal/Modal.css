@@ -1,0 +1,23 @@
+.modal-container {
+    background-color: var(--primary-medium);
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    margin: 20px;
+}
+
+.modal-title {
+    padding: 8px;
+}
+
+.modal-button-wrapper {
+    display: flex;
+    position: absolute;
+    /* to add floating effect*/
+    right: -28px;
+    top: -28px; 
+}
+
+.modal-content-section {
+    padding: 0px 16px 16px 16px;
+}
