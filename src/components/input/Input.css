@@ -1,7 +1,9 @@
 
 input::placeholder, textarea::placeholder {
     color: var(--primary-darker);
+    opacity: 1;
     font-family: var(--raleway-regular);
+    font-size: medium;
 }
 
 .input-container {
