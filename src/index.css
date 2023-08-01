@@ -44,6 +44,9 @@ body {
   /*These are the color variables we'll define globally*/
 
   /*Primary*/
+  --color-primary-ultra-light: #CDE5F3;
+  --color-primary-medium: #76B7DE;
+  --color-primary-medium-light: #9BCAE7;
   --color-primary-light: #0585da;
   --color-primary: #00528f;
   --color-primary-dark: #003c6a;
