@@ -1,12 +1,21 @@
 .flag-container {
     display: flex;
-    justify-content: center;
     height: 28px;
+    justify-content: center;
     align-items: center;
     max-width: 100px;
     border-radius: 4px;
     color: var(--white);
-    text-overflow: ellipsis;
+    overflow: hidden;
     font-family: var(--ibm-light);
     margin: 2px;
+    padding: 0px 4px 0px 4px;
 }
+
+    h4 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+        overflow: hidden;
+        padding: 0px 2px 0px 2px;
+    }
