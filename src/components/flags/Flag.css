@@ -1,0 +1,12 @@
+.flag-container {
+    display: flex;
+    justify-content: center;
+    height: 28px;
+    align-items: center;
+    max-width: 100px;
+    border-radius: 4px;
+    color: var(--white);
+    text-overflow: ellipsis;
+    font-family: var(--ibm-light);
+    margin: 2px;
+}
