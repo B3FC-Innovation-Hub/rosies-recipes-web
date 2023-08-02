@@ -4,6 +4,7 @@ export type ModalProps = {
     isOpen?: boolean,
     modalTitle: string,
     //TODO: type this more specifically
-    children?: ReactComponentElement<any, any>[];
-    toggable?: boolean
+    children?: ReactComponentElement<any, any>[],
+    toggable?: boolean,
+    cssClass: string
 }
