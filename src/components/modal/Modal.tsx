@@ -7,7 +7,7 @@ import close from '../../assets/icons/icons8-close-24.png';
 const Modal:React.FC<ModalProps> = (props: ModalProps) => {
 	return(
 		<>
-			<div className='modal-container'>
+			<div className={`modal-container ${props.cssClass}`}>
 				{
 					props.toggable && <div className='modal-button-wrapper'><Button color='pink' icon={close} fab='fab'/></div>
 				}

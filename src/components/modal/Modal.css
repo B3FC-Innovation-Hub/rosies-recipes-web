@@ -2,8 +2,15 @@
     background-color: var(--primary-medium-light);
     border-radius: 20px;
     position: relative;
+    width: 50%;
+}
+
+.modal-container.big {
     width: 100%;
-    margin: 20px;
+}
+
+.modal-container.small {
+    width: 50%;
 }
 
 .modal-title {
@@ -19,5 +26,9 @@
 }
 
 .modal-content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 0px 16px 16px 16px;
 }
