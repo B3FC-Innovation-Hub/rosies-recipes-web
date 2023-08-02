@@ -1,7 +1,7 @@
 import { ModalProps } from "../../types/ModalProps";
 import Button from "../button/Button";
 import "./Modal.css";
-import close from "../../assets/icons/icons8-close-24.png";
+import { ReactComponent as CloseIcon } from '../../assets/icons/close-icon.svg';
 
 const Modal: React.FC<ModalProps> = (props: ModalProps) => {
 	return (
@@ -9,7 +9,7 @@ const Modal: React.FC<ModalProps> = (props: ModalProps) => {
 			<div className={`modal-container ${props.cssClass}`}>
 				{props.toggable && (
 					<div className="modal-button-wrapper">
-						<Button color="pink" icon={close} cssClass="fab" />
+						<Button color="pink" icon={<CloseIcon />} cssClass="fab" />
 					</div>
 				)}
 				<h2 className="modal-title">{props.modalTitle}</h2>
