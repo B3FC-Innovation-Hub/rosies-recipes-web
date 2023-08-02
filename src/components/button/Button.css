@@ -2,10 +2,10 @@
 font settings, so we have to set all their css properties manually*/
 
 .button-green {
-	background-color: var(--secondary);
-	color: var(--black);
+	background-color: var(--color-secondary);
+	color: var(--color-black);
 	height: 38px;
-	font-family: var(--ibm-semibold);
+	font-family: var(--font-ibm-semibold);
 	width: 220px;
 	border-width: 0;
 	border-radius: 6px;
@@ -16,10 +16,10 @@ font settings, so we have to set all their css properties manually*/
 }
 
 .button-pink {
-	background-color: var(--accent);
-	color: var(--white);
+	background-color: var(--color-accent);
+	color: var(--color-white);
 	height: 38px;
-	font-family: var(--ibm-semibold);
+	font-family: var(--font-ibm-semibold);
 	width: 220px;
 	border-width: 0;
 	border-radius: 6px;

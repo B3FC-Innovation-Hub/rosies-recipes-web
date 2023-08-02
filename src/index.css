@@ -41,33 +41,33 @@ body {
 	/*These are the color variables we'll define globally*/
 
 	/*Primary*/
-	--primary-light: #0585da;
-	--primary: #00528f;
-	--primary-dark: #003c6a;
-	--primary-darker: #001e34;
+	--color-primary-light: #0585da;
+	--color-primary: #00528f;
+	--color-primary-dark: #003c6a;
+	--color-primary-darker: #001e34;
 
 	/*Accent*/
-	--accent: #E40060;
+	--color-accent: #E40060;
 
 	/*Secondary*/
-	--secondary: #DBFE87;
+	--color-secondary: #DBFE87;
 
 	/*Accent*/
-	--warn: #FF8C42;
+	--color-warn: #FF8C42;
 
 	/*Neutrals*/
-	--black: #121212;
-	--white: #fff;
+	--color-black: #121212;
+	--color-white: #fff;
 
 	/*These are the font families we'll define globally. We'll add fallbacks in the same variables*/
 
 	/*IBM Plex Serif */
-	--ibm-regular: "IBM Plex Serif Regular",  Arial, Helvetica, sans-serif;
-	--ibm-medium: "IBM Plex Serif Medium",  Arial, Helvetica, sans-serif;
-	--ibm-semibold: "IBM Plex Serif SemiBold",  Arial, Helvetica, sans-serif;
+	--font-ibm-regular: "IBM Plex Serif Regular",  Arial, Helvetica, sans-serif;
+	--font-ibm-medium: "IBM Plex Serif Medium",  Arial, Helvetica, sans-serif;
+	--font-ibm-semibold: "IBM Plex Serif SemiBold",  Arial, Helvetica, sans-serif;
 
 	/*Raleway*/
-	--raleway-regular: "Raleway regular",  Arial, Helvetica, sans-serif;
+	--font-raleway-regular: "Raleway regular",  Arial, Helvetica, sans-serif;
 }
 
 code {

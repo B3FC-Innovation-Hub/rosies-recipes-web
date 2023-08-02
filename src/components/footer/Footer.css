@@ -5,16 +5,16 @@
 	bottom: 0;
 	padding: 6px;
 	overflow: hidden;
-	color: var(--primary-darker);
+	color: var(--color-primary-darker);
 	display: flex;
 	width: inherit;
 	z-index: 4;
 }
 
 a:link {
-	color: var(--primary-light);
+	color: var(--color-primary-light);
 }
 
 a:hover {
-	color: var(--accent);
+	color: var(--color-accent);
 }

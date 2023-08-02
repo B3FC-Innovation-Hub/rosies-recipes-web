@@ -2,7 +2,7 @@
 	display: flex;
 	flex: 1;
 	position: sticky;
-	background-color: var(--primary);
+	background-color: var(--color-primary);
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
@@ -33,7 +33,7 @@
 
 .login.content-header {
 	display: flex;
-	color: var(--secondary);
+	color: var(--color-secondary);
 	text-align: left;
 	font-size: 5rem;
 	align-self: flex-start;
@@ -42,14 +42,14 @@
 }
 
 .login.content-body {
-	color: var(--secondary);
+	color: var(--color-secondary);
 	text-align: left;
 	max-width: 400px;
 	align-self: center;
 	word-wrap: break-word;
-	font-family: var(--raleway-regular);
+	font-family: var(--font-raleway-regular);
 	font-size: large;
-	text-shadow: 2px 2px 2px var(--black);
+	text-shadow: 2px 2px 2px var(--color-black);
 	z-index: 1;
 }
 
@@ -59,7 +59,7 @@
 	}
 
 	.login.content-container {
-		background-color: var(--primary-dark);
+		background-color: var(--color-primary-dark);
 		flex: 0 1;
 		padding-top: 20px;
 		padding-bottom: 20px;
