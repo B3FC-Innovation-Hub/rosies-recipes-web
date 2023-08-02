@@ -1,0 +1,92 @@
+.login.container {
+	display: flex;
+	flex: 1;
+	position: sticky;
+	background-color: var(--color-primary);
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	overflow: hidden;
+	height: 100%;
+}
+
+.login.image-background {
+	width: 100%;
+	height: inherit;
+	position: fixed;
+	/*The scaling is to achieve the same result as in the 
+	mockup but without the need to import a cropped image, which
+	doesn't work on mobile devices*/
+	transform: scale(2, 2);
+	overflow: hidden;
+}
+
+.login.content-container {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+	align-self: center;
+	z-index: 2;
+}
+
+.login.content-header {
+	display: flex;
+	color: var(--color-secondary);
+	text-align: left;
+	font-size: 5rem;
+	align-self: flex-start;
+	flex-direction: column;
+	z-index: 1;
+}
+
+.login.content-body {
+	color: var(--color-secondary);
+	text-align: left;
+	max-width: 400px;
+	align-self: center;
+	word-wrap: break-word;
+	font-family: var(--font-raleway-regular);
+	font-size: large;
+	text-shadow: 2px 2px 2px var(--color-black);
+	z-index: 1;
+}
+
+@media screen and (max-width: 460px) {
+	.login.container {
+		min-width: 280px;
+	}
+
+	.login.content-container {
+		background-color: var(--color-primary-dark);
+		flex: 0 1;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-radius: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.login.content-header  {
+		align-self: flex-start;
+		max-width: 240px;
+		margin: 8px;
+		padding: 8px;
+		font-size: 3rem;
+	}
+
+	p {
+		align-self: flex-start;
+		max-width: 240px;
+		margin: 8px;
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+
+	.image-background {
+		width: auto;
+		height: 100%;
+		transform: translate(-14%, 14%);
+		resize: inherit;
+	}
+}

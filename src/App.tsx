@@ -1,13 +1,11 @@
-
 import "./App.css";
+import RoutesContainer from "./routes/Routes";
 
 function App() {
 	return (
+	/**/
 		<div className="App">
-			Hello world
-			<h1>
-				This is NOT a test
-			</h1>
+			<RoutesContainer />
 		</div>
 	);
 }
