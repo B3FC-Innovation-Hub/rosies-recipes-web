@@ -7,7 +7,7 @@ const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 			{
 				props.icon && <img className="btn-icon" src={props.icon} alt="an icon"/>
 			}
-			<h4>{props.title ?? <></>}</h4>
+			<>{props.title ?? <></>}</>
 		</button>
 	);
 };
