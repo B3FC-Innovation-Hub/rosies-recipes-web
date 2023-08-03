@@ -6,32 +6,27 @@
 
 @font-face {
 	font-family: "IBM Plex Serif Medium";
-	src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-Medium.ttf")
+	src: url("./assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Medium.ttf")
 		format("truetype");
 }
 
 @font-face {
-  font-family: "IBM Plex Serif Medium";
-  src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-Medium.ttf")
-    format("truetype");
+	font-family: "IBM Plex Serif Regular";
+	src: url("./assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf")
+		format("truetype");
 }
 
 @font-face {
-  font-family: "IBM Plex Serif Regular";
-  src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf")
-    format("truetype");
+	font-family: "IBM Plex Serif SemiBold";
+	src: url("./assets/fonts/IBM_Plex_Serif/IBMPlexSerif-SemiBold.ttf")
+		format("truetype");
 }
 
 @font-face {
-  font-family: "IBM Plex Serif SemiBold";
-  src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-SemiBold.ttf")
-    format("truetype");
+	font-family: "Raleway regular";
+	src: url("./assets/fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Raleway regular";
-  src: url("../src/fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
-}
 
 body {
   display: flex;
