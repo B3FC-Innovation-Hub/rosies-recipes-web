@@ -4,7 +4,7 @@ import { RedirectRequest } from "@azure/msal-browser";
 
 const Home: React.FC = () => {
 	const { instance, accounts } = useMsal();
-	const redirectStartPage = 'http://localhost:3000';
+	const redirectStartPage = process.env.REACT_APP_DEV_URI;
 	
 	const requests: RedirectRequest = {
 		scopes: [],
