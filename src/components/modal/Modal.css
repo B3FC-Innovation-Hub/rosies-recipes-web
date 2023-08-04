@@ -1,5 +1,5 @@
 .modal-container {
-    background-color: var(--primary-medium-light);
+    background-color: var(--color-primary-medium-lighter);
     border-radius: 20px;
     position: relative;
     width: 50%;
@@ -11,10 +11,6 @@
 
 .modal-container.small {
     width: 300px;
-}
-
-.modal-title {
-    padding: 8px;
 }
 
 .modal-button-wrapper {

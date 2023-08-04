@@ -1,8 +1,8 @@
 
 input::placeholder, textarea::placeholder {
-    color: var(--primary-darker);
+    color: var(--color-primary-darker);
     opacity: 1;
-    font-family: var(--raleway-regular);
+    font-family: var(--font-raleway-regular);
     font-size: medium;
 }
 
@@ -16,7 +16,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .input, .input-multiline {
-    background-color: var(--primary-medium);
+    background-color: var(--color-primary-medium);
     opacity: 60%;
     border-color: transparent;
     width: 520px;

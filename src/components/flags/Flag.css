@@ -5,9 +5,9 @@
     align-items: center;
     max-width: 100px;
     border-radius: 4px;
-    color: var(--white);
+    color: var(--color-white);
     overflow: hidden;
-    font-family: var(--ibm-light);
+    font-family: var(--color-ibm-light);
     margin: 2px;
     padding: 0px 4px 0px 4px;
 }

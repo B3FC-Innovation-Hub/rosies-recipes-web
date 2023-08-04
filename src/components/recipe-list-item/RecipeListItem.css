@@ -1,8 +1,8 @@
 .recipe-list-item-container {
     display: flex;
-    background-color: var(--primary-medium);
+    background-color: var(--color-primary-medium);
     border-radius: 8px;
-    font-family: var(--raleway-regular);
+    font-family: var(--font-raleway-regular);
     justify-content: space-between;
     align-items: center;
     width: 100%;

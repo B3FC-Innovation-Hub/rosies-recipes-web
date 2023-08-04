@@ -1,7 +1,7 @@
 .loading-bar-container {
-    background-color: var(--primary-medium);
+    background-color: var(--color-primary-medium);
     border-radius: 8px;
-    font-family: var(--raleway-regular);
+    font-family: var(--font-raleway-regular);
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ p {
 
 .loading-bar-wrapper {
     display: flex;
-    background-color: var(--white);
+    background-color: var(--color-white);
     width: 100%;
     height: 12px;
     border-radius: 8px;
@@ -33,9 +33,9 @@ p {
 }
 
 .loading-progress {
-    background-color: var(--accent);
+    background-color: var(--color-accent);
 }
 
 .loading-complete {
-    background-color: var(--secondary);
+    background-color: var(--color-secondary);
 }
