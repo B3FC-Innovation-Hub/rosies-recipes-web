@@ -6,5 +6,6 @@ export type ModalProps = {
     //TODO: type this more specifically
     children?: ReactComponentElement<any, any>[],
     toggable?: boolean,
+    //In this case css class is big or small
     cssClass: string
 }

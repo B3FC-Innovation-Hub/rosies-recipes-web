@@ -7,7 +7,7 @@
     border-radius: 4px;
     color: var(--color-white);
     overflow: hidden;
-    font-family: var(--color-ibm-light);
+    font-family: var(--font-ibm-light);
     margin: 2px;
     padding: 0px 4px 0px 4px;
 }
