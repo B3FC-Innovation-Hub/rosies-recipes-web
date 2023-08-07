@@ -33,9 +33,15 @@ font settings, so we have to set all their css properties manually*/
 	border-radius: 50%;
 }
 
-.btn-icon {
-	height: 24px;
-	padding: 4px;
+
+.button.fab {
+	height: 38px;
+	width: 38px;
+	border-radius: 50%;
+}
+
+svg {
+	padding: 6px;
 }
 
 .btn-title {

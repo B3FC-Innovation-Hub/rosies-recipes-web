@@ -1,13 +1,21 @@
 .top-bar-container {
     width: inherit;
     display: flex;
-    background-color: #E40060;
-    color: #fff;
-    justify-content: space-between;
+    background-color: var(--color-accent);
+    color: var(--color-white);
     align-items: center;
     padding: 8px;
+    justify-content: space-between;
 }
 
-.topbar-icon  {
-    padding: 4px;
+.menu-left {
+    padding-left: 8px;
+}
+
+.menu-right {
+    padding-right: 16px;
+}
+
+.topbar-icon {
+    padding: 6px;
 }
