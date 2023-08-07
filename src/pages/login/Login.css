@@ -58,6 +58,10 @@
 		min-width: 280px;
 	}
 
+	.login.content-body {
+		padding-left: 8px
+	}
+
 	.login.content-container {
 		background-color: var(--color-primary-dark);
 		flex: 0 1;
