@@ -31,10 +31,6 @@ const Login: React.FC = () => {
 					title="Login with 365"
 					color="green"
 				/>
-				<Button
-					color="pink"
-					icon={<CheckIcon />}
-				/>
 			</div>
 			<Footer />
 		</div>
