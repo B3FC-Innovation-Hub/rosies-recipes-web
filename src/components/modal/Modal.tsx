@@ -3,6 +3,10 @@ import Button from "../button/Button";
 import "./Modal.css";
 import { ReactComponent as CloseIcon } from '../../assets/icons/close-icon.svg';
 
+/**
+ * This is a reusable modal component that can accept jsx elements as children
+ */
+
 const Modal: React.FC<ModalProps> = (props: ModalProps) => {
 	return (
 		<>

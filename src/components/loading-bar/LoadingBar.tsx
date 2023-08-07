@@ -1,10 +1,8 @@
 import { LoadingBarProps } from '../../types/LoadingBarProps';
 import './LoadingBar.css';
 
-
 /**
- * I did not pass the css classname directly through props since it depends conditionally of whether the 
- * progress is complete or not .
+ * This component will indicate the progress of the upload of a certain recipe
  */
 const LoadingBar: React.FC<LoadingBarProps> = (props: LoadingBarProps) => {
 	return (

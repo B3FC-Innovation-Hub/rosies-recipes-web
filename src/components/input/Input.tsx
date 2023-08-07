@@ -1,6 +1,10 @@
 import { InputProps } from "../../types/InputProps";
 import "./Input.css";
 
+/**
+ * This component renders a custom input or textarea , depending on the parameters passed.
+ */
+
 const Input: React.FC<InputProps> = (props: InputProps) => {
 	return (
 		<div className="input-container">
