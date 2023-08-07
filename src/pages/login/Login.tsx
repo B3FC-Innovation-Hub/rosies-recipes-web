@@ -3,6 +3,7 @@ import "./Login.css";
 import background from "../../assets/background-spheres.png";
 import Footer from "../../components/footer/Footer";
 import SpheresBackground from "./spheres-background/SpheresBackground";
+import { ReactComponent as CheckIcon} from '../../assets/icons/check-icon.svg';
 
 const Login: React.FC = () => {
 	
@@ -29,6 +30,10 @@ const Login: React.FC = () => {
 				<Button
 					title="Login with 365"
 					color="green"
+				/>
+				<Button
+					color="pink"
+					icon={<CheckIcon />}
 				/>
 			</div>
 			<Footer />
