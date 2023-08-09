@@ -11,7 +11,7 @@ import {
  * This is our root component and here is where the user will log in with their Microsoft account
  */
 
-const Login: React.FC = () => {
+const LoginPageFC: React.FC = () => {
 	const { instance } = useMsal();
 
 	const loginAuthHandler = () => {
@@ -52,4 +52,4 @@ const Login: React.FC = () => {
 	);
 };
 
-export default Login;
+export default LoginPageFC;

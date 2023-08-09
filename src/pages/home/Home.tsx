@@ -2,18 +2,18 @@ import { AuthenticatedTemplate, useMsal } from "@azure/msal-react";
 import Button from "../../components/button/Button";
 import { RedirectRequest } from "@azure/msal-browser";
 
-const Home: React.FC = () => {
+const HomePageFC: React.FC = () => {
 	const { instance, accounts } = useMsal();
 	const redirectStartPage = process.env.REACT_APP_DEV_URI;
 	
-	const requests: RedirectRequest = {
+	const request: RedirectRequest = {
 		scopes: [],
 		redirectStartPage: redirectStartPage
 	};
 	
 	const logoutHandler = () => {
 		try {
-			instance.loginRedirect(requests);
+			instance.loginRedirect(request);
 		} catch (e) {
 			console.log(e);
 		}
@@ -33,4 +33,5 @@ const Home: React.FC = () => {
 	);
 };
 
-export default Home;
+
+export default HomePageFC;

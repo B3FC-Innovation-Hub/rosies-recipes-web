@@ -6,7 +6,7 @@ import { ReactComponentElement } from "react";
 
 export type ButtonProps = {
     title?: string;
-    onClick?: () => void | Promise<any>; // optional, but recommended to handle async operations
+    onClick?: () => void | Promise<void>; // optional, but recommended to handle async operations
     //For the places where we will use green buttons
     color: string;
     /*To specify a certain specific type of button. So far the only parameter accepted is 'fab', 
