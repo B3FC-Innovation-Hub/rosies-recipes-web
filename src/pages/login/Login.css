@@ -75,6 +75,10 @@
 		font-size: 3rem;
 	}
 
+	.login.content-body {
+		padding-left: 12px;
+	}
+
 	.content {
 		align-self: flex-start;
 		max-width: 240px;
