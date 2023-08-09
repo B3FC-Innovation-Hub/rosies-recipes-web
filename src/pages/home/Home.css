@@ -1,10 +1,14 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100% - 60px);
     width: 100%;
     position: fixed;
     overflow: hidden;
+    /*
+        In order to fit under the navbar
+    */
+    margin-top: 60px;
 }
 
 .home-container {
