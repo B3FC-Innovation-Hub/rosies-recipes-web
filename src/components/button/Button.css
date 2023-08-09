@@ -18,7 +18,7 @@ font settings, so we have to set all their css properties manually*/
 
 .button.green {
 	background-color: var(--color-secondary);
-	color: var(--black);
+	color: var(--color-black);
 }
 
 .button.pink {
