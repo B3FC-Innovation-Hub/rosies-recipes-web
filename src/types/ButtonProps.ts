@@ -5,7 +5,7 @@ import { ReactComponentElement } from "react";
  */
 
 export type ButtonProps = {
-    title: string;
+    title?: string;
     onClick?: () => void | Promise<any>; // optional, but recommended to handle async operations
     //For the places where we will use green buttons
     color: string;
