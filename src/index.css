@@ -1,76 +1,89 @@
 @font-face {
+	font-family: "IBM Plex Serif Light";
+	src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-Light.ttf")
+		format("truetype");
+}
+
+@font-face {
 	font-family: "IBM Plex Serif Medium";
 	src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-Medium.ttf")
 		format("truetype");
 }
 
 @font-face {
-	font-family: "IBM Plex Serif Regular";
-	src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf")
-		format("truetype");
+  font-family: "IBM Plex Serif Medium";
+  src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-Medium.ttf")
+    format("truetype");
 }
 
 @font-face {
-	font-family: "IBM Plex Serif SemiBold";
-	src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-SemiBold.ttf")
-		format("truetype");
+  font-family: "IBM Plex Serif Regular";
+  src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf")
+    format("truetype");
 }
-
 
 @font-face {
-	font-family: "Raleway regular";
-	src: url("../src/fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
+  font-family: "IBM Plex Serif SemiBold";
+  src: url("../src/fonts/IBM_Plex_Serif/IBMPlexSerif-SemiBold.ttf")
+    format("truetype");
 }
 
-
+@font-face {
+  font-family: "Raleway regular";
+  src: url("../src/fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
+}
 
 body {
-	display: flex;
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  display: flex;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
-	display: flex;
-	flex: 1;
+  display: flex;
+  flex: 1;
 
-	/*These are the color variables we'll define globally*/
+  /*These are the color variables we'll define globally*/
 
 	/*Primary*/
-	--color-primary-light: #0585da;
+	--color-primary-ultra-light: #CDE5F3;
+	--color-primary-light: #067BC2;
+	--color-primary-medium-lighter: #9BCAE7;
+	--color-primary-medium: #76B7DE;
 	--color-primary: #00528f;
 	--color-primary-dark: #003c6a;
 	--color-primary-darker: #001e34;
 
-	/*Accent*/
-	--color-accent: #E40060;
+  /*Accent*/
+  --color-accent: #e40060;
 
-	/*Secondary*/
-	--color-secondary: #DBFE87;
+  /*Secondary*/
+  --color-secondary: #dbfe87;
 
-	/*Accent*/
-	--color-warn: #FF8C42;
+  /*Accent*/
+  --color-warn: #ff8c42;
 
-	/*Neutrals*/
-	--color-black: #121212;
-	--color-white: #fff;
+  /*Neutrals*/
+  --color-black: #121212;
+  --color-white: #fff;
 
-	/*These are the font families we'll define globally. We'll add fallbacks in the same variables*/
+  /*These are the font families we'll define globally. We'll add fallbacks in the same variables*/
 
 	/*IBM Plex Serif */
+	--font-ibm-light: "IBM Plex Serif Light", Arial, Helvetica, sans-serif;
 	--font-ibm-regular: "IBM Plex Serif Regular",  Arial, Helvetica, sans-serif;
 	--font-ibm-medium: "IBM Plex Serif Medium",  Arial, Helvetica, sans-serif;
 	--font-ibm-semibold: "IBM Plex Serif SemiBold",  Arial, Helvetica, sans-serif;
 
-	/*Raleway*/
-	--font-raleway-regular: "Raleway regular",  Arial, Helvetica, sans-serif;
+  /*Raleway*/
+  --font-raleway-regular: "Raleway regular", Arial, Helvetica, sans-serif;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }

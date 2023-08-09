@@ -1,0 +1,40 @@
+
+input::placeholder, textarea::placeholder {
+    color: var(--color-primary-darker);
+    opacity: 1;
+    font-family: var(--font-raleway-regular);
+    font-size: medium;
+}
+
+.input-container {
+    width: 520px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 8px;
+    padding-left: 16px;
+}
+
+.input, .input-multiline {
+    background-color: var(--color-primary-medium);
+    opacity: 60%;
+    border-color: transparent;
+    width: 520px;
+    border-radius: 12px;
+    padding: 8px
+}
+.input.multiline  {
+    height: 83px;
+    resize: none;
+}
+
+.input {
+    height: 38px;
+}
+
+
+@media screen and (max-width: 460px) {
+    .input-container, .input, .input-multiline{
+        width: 320px;
+    }
+}

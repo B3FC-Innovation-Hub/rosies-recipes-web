@@ -1,30 +1,44 @@
 /*Elements such as buttons and inputs don not inherit 
 font settings, so we have to set all their css properties manually*/
 
-.button-green {
-	background-color: var(--color-secondary);
-	color: var(--color-black);
-	height: 38px;
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
 	font-family: var(--font-ibm-semibold);
-	width: 220px;
+	width: 160px;
 	border-width: 0;
 	border-radius: 6px;
 	font-size: medium;
-	margin: 2px;
+	margin: 4px;
 	align-self: center;
 	z-index: 1;
 }
 
-.button-pink {
+.button.green {
+	background-color: var(--color-secondary);
+	color: var(--black);
+}
+
+.button.pink {
 	background-color: var(--color-accent);
 	color: var(--color-white);
+}
+
+
+.button.fab {
 	height: 38px;
-	font-family: var(--font-ibm-semibold);
-	width: 220px;
-	border-width: 0;
-	border-radius: 6px;
-	font-size: medium;
-	margin: 2px;
-	align-self: center;
-	z-index: 1;
+	width: 38px;
+	border-radius: 50%;
+}
+
+.btn-icon {
+	height: 24px;
+	padding: 4px;
+}
+
+.btn-title {
+	margin-left: 6px;
+	margin-right: 6px;
 }

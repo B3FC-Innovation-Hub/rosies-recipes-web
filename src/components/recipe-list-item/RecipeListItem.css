@@ -1,0 +1,13 @@
+.recipe-list-item-container {
+    display: flex;
+    background-color: var(--color-primary-medium);
+    border-radius: 8px;
+    font-family: var(--font-raleway-regular);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 4px;
+    padding-left: 4px;
+    height: 42px;
+    margin-top: 8px;
+}

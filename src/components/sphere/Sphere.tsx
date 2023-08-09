@@ -1,6 +1,11 @@
 import "./Sphere.css";
 import { SphereProps } from "../../types/SphereProps";
 
+/**
+ * The Sphere component renders a sphere with a png image inside.
+ * This will be used across many screens to follow our design system.
+ */
+
 const Sphere: React.FC<SphereProps> = (props: SphereProps) => {
 	return (
 		<span

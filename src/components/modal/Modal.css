@@ -1,0 +1,30 @@
+.modal-container {
+    background-color: var(--color-primary-medium-lighter);
+    border-radius: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.modal-container.big {
+    width: 100%;
+}
+
+.modal-container.small {
+    width: 300px;
+}
+
+.modal-button-wrapper {
+    display: flex;
+    position: absolute;
+    /* to add floating effect*/
+    right: -28px;
+    top: -28px; 
+}
+
+.modal-content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 16px 16px 16px;
+}

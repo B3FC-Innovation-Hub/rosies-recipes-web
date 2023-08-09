@@ -4,8 +4,12 @@ import background from "../../assets/background-spheres.png";
 import Footer from "../../components/footer/Footer";
 import SpheresBackground from "./spheres-background/SpheresBackground";
 
+/**
+ * This is our root component and here is where the user will log in with their Microsoft account
+ */
+
 const Login: React.FC = () => {
-	
+
 	return (
 		<div className="login container">
 			<img
@@ -19,16 +23,13 @@ const Login: React.FC = () => {
 					<strong>Rosie's</strong> Recipes
 				</header>
 				<p className="login content-body">
-					Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-					tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-					veniam, quis nostrum exercitationem ullam corporis suscipit Excepteur
-					sint obcaecat cupiditat non proident, sunt in culpa qui officia
-					deserunt mollit anim id est laborum.
+          Test test test test Lorem ipsum dolor sit amet, consectetur adipisci
+          elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrum exercitationem ullam corporis
+          suscipit Excepteur sint obcaecat cupiditat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum.
 				</p>
-				<Button
-					title="Login with 365"
-					color="green"
-				/>
+				<Button title="Login with 365" color="green" />
 			</div>
 			<Footer />
 		</div>

@@ -1,0 +1,41 @@
+.loading-bar-container {
+    background-color: var(--color-primary-medium);
+    border-radius: 8px;
+    font-family: var(--font-raleway-regular);
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48px;
+    position: relative;
+    margin-top: 8px;
+    padding: 4px;
+}
+
+p {
+    padding: 4px 0px 8px 8px;
+    margin: 0;
+}
+
+.loading-bar-wrapper {
+    display: flex;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 12px;
+    border-radius: 8px;
+}
+
+.loading-progress, .loading-complete {
+    display: flex;
+    transition:.5s ease all;
+    height: 12px;
+    border-radius: 8px;
+}
+
+.loading-progress {
+    background-color: var(--color-accent);
+}
+
+.loading-complete {
+    background-color: var(--color-secondary);
+}
