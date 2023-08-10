@@ -4,7 +4,7 @@ import Input from "../../components/input/Input";
 import TopBar from "../../components/topbar/TopBar";
 import "./Upload.css";
 
-const Upload: React.FC = () => {
+const UploadPageFC: React.FC = () => {
 	return (
 		<div className="wrapper">
 			<TopBar />
@@ -35,4 +35,4 @@ const Upload: React.FC = () => {
 	);
 };
 
-export default Upload;
+export default UploadPageFC;
