@@ -4,7 +4,6 @@ import { AuthenticatedTemplate, UnauthenticatedTemplate } from "@azure/msal-reac
 import "./Home.css";
 import { ReactComponent as SearchIcon } from "../../assets/icons/search-icon.svg";
 import { ReactComponent as UploadIcon } from "../../assets/icons/upload-icon.svg";
-import "./Home.css";
 import HomeBackground from "./home-bg/HomeBackground";
 import Footer from "../../components/footer/Footer";
 
