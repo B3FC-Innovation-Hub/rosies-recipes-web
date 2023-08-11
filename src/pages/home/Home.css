@@ -20,6 +20,16 @@
     flex-direction: column;
 }
 
+.home-unauthenticated {
+    z-index: 2;
+    display: flex;
+    height: 100%;
+    max-width: 50%;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
 .home-container-content {
     z-index: 1;
     height: 100%;
@@ -64,6 +74,7 @@ strong {
     .home-container-content {
         width: inherit;
         width: 50%;
+        margin-top: 24px;
         overflow: hidden;
     }
 
