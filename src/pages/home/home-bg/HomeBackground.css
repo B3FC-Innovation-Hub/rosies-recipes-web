@@ -15,40 +15,27 @@
     flex-direction: row;
     width: 300px;
     height: inherit;
-
-    &.darker {
-        background-color: #4E96D0;
-    }
-
-    &.dark {
-        background-color: #65A3D6
-    }
-
-    &.light {
-        background-color: #75ABDA;
-    }
-
-    &.lighter {
-        background-color: #A8CAE9;
-    }
+    z-index: -1;
 }
 
-/*For Firefox support*/
-
 .stripes.darker {
-    background-color: #4E96D0;
+    background-color: var(--color-primary-light);
+    opacity: 90%;
 }
 
 .stripes.dark {
-    background-color: #65A3D6
+    background-color: var(--color-primary-light);
+    opacity: 80%;
 }
 
 .stripes.light {
-    background-color: #75ABDA;
+    background-color: var(--color-primary-light);
+    opacity: 60%;
 }
 
 .stripes.lighter {
-    background-color: #A8CAE9;
+    background-color: var(--color-primary-light);
+    opacity: 40%;
 }
 
 @media screen and (max-width: 460px) {

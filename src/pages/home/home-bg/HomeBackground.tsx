@@ -22,10 +22,11 @@ const HomeBackground: React.FC = () => {
 				</div>
 				<div className='stripes light'>
 				</div>
+		
+			
 			</div>
-            
 		</div>
 	);
 };  
 
-export default HomeBackground;
+export default HomeBackground;								

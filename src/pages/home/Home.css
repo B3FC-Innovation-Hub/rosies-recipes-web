@@ -15,8 +15,8 @@
     height: inherit;
     display: flex;
     flex: 1;
-    background-color: #CDE5F3;
-    color: #001E34;
+    background-color: var(--color-primary-ultra-light);
+    color: var(--color-primary-darker);
     flex-direction: column;
 }
 
@@ -30,19 +30,19 @@
 
 .home-header {
     font-size: 4rem;
-    font-family: 'IBM Plex Serif Light', Arial, Helvetica, sans-serif;
+    font-family: var(--font-ibm-light);
     word-wrap: break-word;
     text-align: left;
 }
 
 strong {
-    font-family: 'IBM Plex Serif Medium', Arial, Helvetica, sans-serif;
+    font-family: var(--font-ibm-medium);
 
 }
 
 .home-content {
-    color: #001E34;
-    font-family: 'Raleway Regular', Arial, Helvetica, sans-serif;
+    color: var(--color-primary-darker);
+    font-family: var(--font-raleway-regular);
     font-size: x-large;
     word-wrap: break-word;
     word-wrap: break-word;
