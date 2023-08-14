@@ -34,13 +34,13 @@ const HomePageFC: React.FC = () => {
 								title="Upload"
 								color="accent"
 								onClick={() => navigate("/")}
-								icon={<SearchIcon fill="white" />}
+								icon={<SearchIcon />}
 							/>
 							<Button
 								title="Browse"
 								color="accent"
 								onClick={() => navigate("/")}
-								icon={<UploadIcon fill="white" />}
+								icon={<UploadIcon />}
 							/>
 						</div>
 					</AuthenticatedTemplate>

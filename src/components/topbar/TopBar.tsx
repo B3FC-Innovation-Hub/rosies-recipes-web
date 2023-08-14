@@ -31,7 +31,8 @@ const TopBar: React.FC<TopBarProps> = (props: TopBarProps) => {
 						Inside this burger menu, we'll have a custom collapsible menu
 						*/
 					}
-					<MenuIcon className='topbar-icon' fill='white'/>
+					<Button color='accent' cssClass='fab' icon={<MenuIcon/>}/>
+					
 				</div>
 				<div className='menu-right'>
 					<p className='topbar-username'>Signed in as {props.username}</p>
