@@ -1,14 +1,25 @@
+import React from "react";
 import Button from "../../components/button/Button";
 import Footer from "../../components/footer/Footer";
 import Input from "../../components/input/Input";
-import TopBar from "../../components/topbar/TopBar";
+import useBreakpoint from "use-breakpoint";
 import "./Upload.css";
 
+const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 1280 };
+
 const UploadPageFC: React.FC = () => {
+	/*
+	A React hook (>=16.8) for getting the current responsive media breakpoint, successor to breakpoint-observer.
+	*/
+	const { breakpoint} = useBreakpoint(
+		BREAKPOINTS,
+		//Default breakpoint value
+		"desktop"
+	);
+
 	return (
-		<div className="wrapper">
-			<TopBar />
-			<div className="upload-container">
+		<div className="upload-wrapper">
+			<div className={`upload-container ${breakpoint}`}>
 				<div className="upload-container-content">
 					<h1 className="upload-header">Let the good food begin</h1>
 					<p className="upload-content">
@@ -23,11 +34,18 @@ const UploadPageFC: React.FC = () => {
 						<div className="upload-input">
 							<Input multiline={true} placeholder="Paste your recipe here" />
 						</div>
-					
 					</div>
+
 					<div className="upload-button-wrapper">
-						<Button title="Upload" color="pink" />
+						<Button title="Upload" color="accent" />
 					</div>
+				</div>
+				<div className="upload-progress-wrapper">
+					{
+						/*
+						We'll render the upload progress here
+						*/
+					}
 				</div>
 			</div>
 			<Footer />
