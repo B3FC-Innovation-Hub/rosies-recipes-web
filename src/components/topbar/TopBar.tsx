@@ -34,7 +34,7 @@ const TopBar: React.FC<TopBarProps> = (props: TopBarProps) => {
 					<MenuIcon className='topbar-icon' fill='white'/>
 				</div>
 				<div className='menu-right'>
-					<p className='topbar-usernamee'>Signed in as {props.username}</p>
+					<p className='topbar-username'>Signed in as {props.username}</p>
 					<div>
 						<Button
 							title="Sign out"
