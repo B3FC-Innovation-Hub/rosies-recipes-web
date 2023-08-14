@@ -19,7 +19,7 @@ const TopBar: React.FC<TopBarProps> = (props: TopBarProps) => {
 		try {
 			instance.logoutRedirect(request);
 		} catch (e) {
-			console.log(e);
+			alert("There was a problem logging you out. Press F12 for more details.");
 		}
 	};
 	return (
