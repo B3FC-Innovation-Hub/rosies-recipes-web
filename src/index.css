@@ -47,6 +47,9 @@ body {
   display: flex;
   flex: 1;
 
+  /*Sizing variables*/
+  --top-bar-height: 60px;
+
   /*These are the color variables we'll define globally*/
 
 	/*Primary*/
