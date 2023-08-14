@@ -9,7 +9,7 @@ const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 	return (
 		<button aria-label="cta button" type="button" className={`button ${props.color} ${props.cssClass ?? ''}`} onClick={props.onClick}>
 			{
-				props.icon ?? <></>
+				<div className="button-icon">{props.icon}</div> ?? <></>
 			}
 			<>{props.title ?? <></>}</>
 		</button>

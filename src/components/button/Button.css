@@ -40,7 +40,8 @@ font settings, so we have to set all their css properties manually*/
 	border-radius: 50%;
 }
 
-svg {
+.button-icon {
+	display: flex;
 	padding: 6px;
 }
 
