@@ -11,7 +11,7 @@ const HomePageFC: React.FC = () => {
 	const navigate = useNavigate();
 	return (
 		<>
-			<div className="wrapper">
+			<div className="home-wrapper">
 				<HomeBackground />
 				<div className="home-container">
 					<UnauthenticatedTemplate>
@@ -34,7 +34,7 @@ const HomePageFC: React.FC = () => {
 							<Button
 								title="Upload"
 								color="accent"
-								onClick={() => navigate("/")}
+								onClick={() => navigate("/upload")}
 								icon={<SearchIcon />}
 							/>
 							<Button
