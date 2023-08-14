@@ -32,13 +32,13 @@ const HomePageFC: React.FC = () => {
 						<div className="button-row">
 							<Button
 								title="Upload"
-								color="pink"
+								color="accent"
 								onClick={() => navigate("/")}
 								icon={<SearchIcon fill="white" />}
 							/>
 							<Button
 								title="Browse"
-								color="pink"
+								color="accent"
 								onClick={() => navigate("/")}
 								icon={<UploadIcon fill="white" />}
 							/>

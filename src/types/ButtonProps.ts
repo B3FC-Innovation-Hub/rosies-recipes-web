@@ -7,7 +7,10 @@ import { ReactComponentElement } from "react";
 export type ButtonProps = {
     title?: string;
     onClick?: () => void | Promise<void>;
-    //To specify which color the button will be, so far the accepted parameters are 'green' or 'pink'
+    /*
+    To specify which color the button will be, so far the accepted parameters are 'secondary' or 'accent',
+     which you can see in index.css
+    */
     color: string;
     /*To specify a certain specific type of button. So far the only parameter accepted is 'fab', 
     but if we want to implement different types of buttons 

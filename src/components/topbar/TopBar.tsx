@@ -38,7 +38,7 @@ const TopBar: React.FC<TopBarProps> = (props: TopBarProps) => {
 					<div>
 						<Button
 							title="Sign out"
-							color="green"
+							color="secondary"
 							onClick={() => logoutHandler()}
 						/>
 					</div>

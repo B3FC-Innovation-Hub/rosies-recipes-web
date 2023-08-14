@@ -43,7 +43,7 @@ const LoginPageFC: React.FC = () => {
 				</p>
 				<Button
 					title="Login with 365"
-					color="green"
+					color="secondary"
 					onClick={() => loginAuthHandler()}
 				/>
 			</div>

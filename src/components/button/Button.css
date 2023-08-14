@@ -16,12 +16,12 @@ font settings, so we have to set all their css properties manually*/
 	z-index: 1;
 }
 
-.button.green {
+.button.secondary {
 	background-color: var(--color-secondary);
 	color: var(--color-black);
 }
 
-.button.pink {
+.button.accent {
 	background-color: var(--color-accent);
 	color: var(--color-white);
 }
