@@ -1,11 +1,13 @@
 import "./SpheresBackground.css";
 import Sphere from "../../../components/sphere/Sphere";
+import { SpheresData } from "./SpheresData";
 import spatula from "../../../assets/food-assets/Spatula.png";
 import pancakes from "../../../assets/food-assets/Pancake.png";
 import cookie from "../../../assets/food-assets/cookie.png";
 import carrot from "../../../assets/food-assets/Carrot.png";
 import ramen from "../../../assets/food-assets/Ramen Noodles.png";
 import blender from "../../../assets/food-assets/Blender.png";
+import React from "react";
 
 /*The purpose of this component is to modularize the background of our login page
 which contains several sphere components that need to be in a specific order and position in
@@ -14,6 +16,9 @@ It consists of two columns with spheres components
 */
 
 const SpheresBackground: React.FC<any> = () => {
+	//To divide the data array ento two equal parts
+	const spheresLeft = SpheresData.slice(0, Math.ceil(SpheresData.length / 2));
+	const spheresRight = SpheresData.slice(Math.ceil(SpheresData.length / 2));
 	return (
 		<>
 			<div className="circles-column-left">
