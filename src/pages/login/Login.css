@@ -124,6 +124,12 @@
 	}
 }
 
+@media screen and (min-width: 1200px) {
+	.login.content-container {
+		transform: scale(1.6);
+	}
+}
+
 @keyframes floating {
 	0% {
 		transform: translate(100px, 100px);
