@@ -124,7 +124,7 @@
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
 	.login.content-container {
 		transform: scale(1.6);
 	}
