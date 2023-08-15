@@ -4,8 +4,7 @@ import Footer from "../../components/footer/Footer";
 import Input from "../../components/input/Input";
 import useBreakpoint from "use-breakpoint";
 import "./Upload.css";
-
-const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 1280 };
+import { BREAKPOINTS } from "../../context/constants/Breakpoints";
 
 const UploadPageFC: React.FC = () => {
 	/*
