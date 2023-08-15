@@ -70,12 +70,12 @@
 	}
 
 	.login-bg-mobile-first {
-		background-color: var(--color-primary-light);
-		animation: floating 8s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
+		background-color: var(--color-primary-dark);
+		animation: floating 16s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
 	}
 	
 	.login-bg-mobile-second {
-		animation: floatingDown 8s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
+		animation: floatingDown 16s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
 		background-color: var(--color-primary-dark);
 	}
 
@@ -134,16 +134,8 @@
 	0% {
 		transform: translate(0%, 0%);
 	}
-
-	25% {
-		transform: translate(0%,20%);
-	}
-
 	50% {
-		transform: translate(0%, 25%);
-	}
-	75% {
-		transform: translate(0%,20%);
+		transform: translate(0%, 60%);
 	}
 	100% {
 		transform: translate(0%, 0%);
@@ -156,16 +148,8 @@
 	from {
 		transform: translate(-20%, 0%);
 	}
-
-	25% {
-		transform: translate(-20%, -50%);
-	}
-
 	50% {
-		transform: translate(-20%, -80%);
-	}
-	75% {
-		transform: translate(-20%, -50%);
+		transform: translate(-20%, -60%);
 	}
 	100% {
 		transform: translate(-20%, 0%);
