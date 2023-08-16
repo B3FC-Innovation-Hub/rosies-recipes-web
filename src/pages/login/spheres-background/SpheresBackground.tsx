@@ -9,7 +9,7 @@ order to look correct .
 It consists of two columns with spheres components
 */
 
-const SpheresBackground: React.FC<any> = () => {
+const SpheresBackground: React.FC = () => {
 	//To divide the data array ento two equal parts
 	return (
 		<>
