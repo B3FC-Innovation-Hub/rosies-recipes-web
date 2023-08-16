@@ -1,7 +1,6 @@
 import Button from "../../components/button/Button";
 import "./Login.css";
 import background from "../../assets/background-spheres.png";
-import Footer from "../../components/footer/Footer";
 import SpheresBackground from "./spheres-background/SpheresBackground";
 import { useMsal } from "@azure/msal-react";
 import useBreakpoint from "use-breakpoint";
@@ -38,8 +37,12 @@ const LoginPageFC: React.FC = () => {
 			<SpheresBackground />
 			{breakpoint === "mobile" && (
 				<>
+					{
+					/**TODO: remame this classes pls */
+					}
 					<div className="login-bg-mobile-first"></div>
 					<div className="login-bg-mobile-second"></div>
+					<div className="login-bg-mobile-third"></div>
 				</>
 			)}
 			<div className="login content-container">
@@ -57,7 +60,6 @@ Whether you're seeking weeknight dinner inspiration, looking to impress guests w
 					onClick={() => loginAuthHandler()}
 				/>
 			</div>
-			<Footer />
 		</div>
 	);
 };
