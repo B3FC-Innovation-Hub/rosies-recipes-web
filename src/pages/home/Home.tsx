@@ -5,7 +5,6 @@ import "./Home.css";
 import { ReactComponent as SearchIcon } from "../../assets/icons/search-icon.svg";
 import { ReactComponent as UploadIcon } from "../../assets/icons/upload-icon.svg";
 import HomeBackground from "./home-bg/HomeBackground";
-import Footer from "../../components/footer/Footer";
 
 const HomePageFC: React.FC = () => {
 	const navigate = useNavigate();
@@ -45,7 +44,6 @@ const HomePageFC: React.FC = () => {
 							/>
 						</div>
 					</AuthenticatedTemplate>
-					<Footer />
 				</div>
 			</div>
 		</>
