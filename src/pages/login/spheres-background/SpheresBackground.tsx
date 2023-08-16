@@ -15,7 +15,7 @@ order to look correct .
 It consists of two columns with spheres components
 */
 
-const SpheresBackground: React.FC<any> = () => {
+const SpheresBackground: React.FC = () => {
 	//To divide the data array ento two equal parts
 	const spheresLeft = SpheresData.slice(0, Math.ceil(SpheresData.length / 2));
 	const spheresRight = SpheresData.slice(Math.ceil(SpheresData.length / 2));

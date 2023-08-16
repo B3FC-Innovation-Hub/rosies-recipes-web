@@ -63,8 +63,9 @@ body {
 	/*Secondary*/
 	--color-secondary: #dbfe87;
 
-	/*Accent*/
-	--color-warn: #ff8c42;
+  /*Accent*/
+  --color-warn-light: #FFBC94;
+  --color-warn: #ff8c42;
 
 	/*Neutrals*/
 	--color-black: #121212;

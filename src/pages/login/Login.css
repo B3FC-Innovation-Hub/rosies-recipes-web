@@ -44,7 +44,7 @@
 .login.content-body {
 	color: var(--color-secondary);
 	text-align: left;
-	max-width: 400px;
+	max-width: 600px;
 	align-self: center;
 	word-wrap: break-word;
 	font-family: var(--font-raleway-regular);
@@ -62,7 +62,7 @@
 		width: auto;
 	}
 
-	.login-bg-mobile-first, .login-bg-mobile-second {
+	.login-bg-mobile-first, .login-bg-mobile-second , .login-bg-mobile-third {
 		position: absolute;
 		width: 100%;
 		height: 50%;
@@ -70,12 +70,17 @@
 	}
 
 	.login-bg-mobile-first {
-		background-color: var(--color-primary-dark);
+		background-color: var(--color-primary-light);
 		animation: floating 16s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
 	}
 	
 	.login-bg-mobile-second {
 		animation: floatingDown 16s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
+		background-color: var(--color-primary-dark);
+	}
+
+	.login-bg-mobile-third {
+		animation: floating 8s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
 		background-color: var(--color-primary-dark);
 	}
 
@@ -129,6 +134,11 @@
 		transform: scale(1.6);
 	}
 }
+@media screen and (max-width: 1600) {
+	.login.content-container {
+		transform: scale(0.9);
+	}
+}
 
 @keyframes floating {
 	0% {
@@ -145,7 +155,7 @@
 
 }
 @keyframes floatingDown {
-	from {
+	0% {
 		transform: translate(-20%, 0%);
 	}
 	50% {
