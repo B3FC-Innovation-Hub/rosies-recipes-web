@@ -3,13 +3,13 @@
 	font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
 	position: absolute;
 	bottom: 0;
-	padding: 6px;
+	padding-top: 16px;
 	overflow: hidden;
 	color: var(--color-primary-darker);
 	display: flex;
-	width: inherit;
-	z-index: 4;
-	align-self: flex-end;
+	width: auto;
+	z-index: 0;
+	right: 0;
 }
 
 a:link {
