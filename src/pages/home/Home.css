@@ -26,10 +26,10 @@
     display: flex;
     justify-content: center;
     align-self: center;
+    padding: 12px;
     flex-direction: column;
     background-color: var(--color-warn-light);
     border-radius: 20px;
-    filter: drop-shadow(0 0 0.75rem var(--color-warn));
 }
 
 .home-container-content {
