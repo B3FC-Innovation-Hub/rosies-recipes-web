@@ -39,7 +39,7 @@ const HomePageFC: React.FC = () => {
 							<Button
 								title="Browse"
 								color="accent"
-								onClick={() => navigate("/")}
+								onClick={() => navigate("/browse")}
 								icon={<UploadIcon />}
 							/>
 						</div>

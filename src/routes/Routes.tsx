@@ -5,6 +5,7 @@ import React from "react";
 import TopBar from "../components/topbar/TopBar";
 import { useMsal } from "@azure/msal-react";
 import UploadPageFC from "../pages/upload/Upload";
+import BrowsePageFC from "../pages/browse/Browse";
 
 const RoutesContainer: React.FC = () => {
 	//To pass the username of the logged account, if it exists
@@ -18,6 +19,7 @@ const RoutesContainer: React.FC = () => {
 				<Route element={<TopBar username={username}/>}>
 					<Route path="/home" element={<HomePageFC />} />
 					<Route path="/upload" element={<UploadPageFC />} />
+					<Route path="/browse" element={<BrowsePageFC />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
