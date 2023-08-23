@@ -8,6 +8,54 @@
 	padding: 20px;
 }
 
+.sphere.micro {
+	width: 1px;
+	height: 1px;
+	left:auto;
+	opacity: 1;
+	right: auto;
+	top:auto;
+	bottom: auto;
+}
+
+.sphere.mini {
+	width: 2px;
+	height: 2px;
+}
+.sphere.xsmall {
+	width: 5px;
+	height: 5px;
+}
+
+.sphere.small {
+	width: 20px;
+	height: 20px;
+}
+
+
+.sphere.medium {
+	height: 40px;
+	width: 40px;
+}
+
+.sphere.big {
+	width: 150px;
+	height: 150px;
+}
+
+.sphere.large {
+	width: 100px;
+	height: 100px;
+
+}
+.sphere.xlarge {
+	width: 200px;
+	height: 200px;
+}
+
+
+
+
 .food {
 	background-size: contain;
 	position: relative;

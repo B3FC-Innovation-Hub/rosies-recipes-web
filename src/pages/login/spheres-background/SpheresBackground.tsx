@@ -18,117 +18,132 @@ const SpheresBackground: React.FC<any> = () => {
 		<>
 			<div className="circles-column-left">
 				<Sphere
-					height={150}
-					width={150}
+					imgHeight={150}
+					imgWidth={150}
 					src={spatula}
-					left={10}
-					top={0}
-					backgroundColor="#FDE8B2"
+					cssClass="big"
+					// left={10}
+					// top={0}
+					// backgroundColor="#FDE8B2"
 				/>
 				<Sphere
-					height={150}
-					width={150}
+					imgHeight={150}
+					imgWidth={150}
 					src={cookie}
-					backgroundColor="#FFB0BD"
-					top={70}
-					left={12}
+					cssClass="big"
+					// backgroundColor="#FFB0BD"
+					// top={70}
+					// left={12}
 				/>
 				<Sphere
-					height={150}
-					width={150}
+					imgHeight={150}
+					imgWidth={150}
 					src={pancakes}
-					backgroundColor="#E40060"
-					top={40}
-					left={4}
+					cssClass="big"
+					// backgroundColor="#E40060"
+					// top={40}
+					// left={4}
 				/>
 				<Sphere
-					height={20}
-					width={20}
-					left={10}
-					top={30}
-					backgroundColor="#A8CAE9"
+					imgHeight={20}
+					imgWidth={20}
+					cssClass="small"
+					// left={10}
+					// top={30}
+					// backgroundColor="#A8CAE9"
 				/>
 				<Sphere
-					height={5}
-					width={5}
-					left={20}
-					top={50}
-					backgroundColor="#EFB9F3"
+					imgHeight={5}
+					imgWidth={5}
+					cssClass="xsmall"
+					// left={20}
+					// top={50}
+					// backgroundColor="#EFB9F3"
 				/>
 				<Sphere
-					height={5}
-					width={5}
-					left={10}
-					top={0}
-					backgroundColor="#FFC09A"
+					imgHeight={5}
+					imgWidth={5}
+					cssClass="xsmall"
+					// left={10}
+					// top={0}
+					// backgroundColor="#FFC09A"
 				/>
 				<Sphere
-					height={40}
-					width={40}
-					left={0}
-					top={70}
-					backgroundColor="#FFA56E"
+					imgHeight={40}
+					imgWidth={40}
+					cssClass="medium"
+					// left={0}
+					// top={70}
+					// backgroundColor="#FFA56E"
 				/>
 			</div>
 			<div className="circles-column-right">
 				<Sphere
-					height={100}
-					width={100}
 					src={carrot}
-					top={80}
-					right={6}
-					backgroundColor="#EFB9F3"
+					imgHeight={100}
+					imgWidth={100}
+					cssClass="large"
+					// top={80}
+					// right={6}
+					// backgroundColor="#EFB9F3"
 				/>
 				<Sphere
-					height={120}
-					width={120}
+					imgHeight={120}
+					imgWidth={120}
 					src={blender}
-					backgroundColor="#FFA56E"
-					top={0}
-					right={10}
+					cssClass="big"
+					// backgroundColor="#FFA56E"
+					// top={0}
+					// right={10}
 				/>
 				<Sphere
-					height={200}
-					width={200}
-					top={30}
-					right={6}
+					imgHeight={200}
+					imgWidth={200}
+					cssClass="xlarge"
 					src={ramen}
-					backgroundColor="#E40060"
+					// top={30}
+					// right={6}
+					// backgroundColor="#E40060"
 				/>
 				<Sphere
-					height={10}
-					width={10}
-					right={5}
-					top={20}
-					backgroundColor="#FDE8B2"
+					imgHeight={10}
+					imgWidth={10}
+					cssClass="small"
+					// right={5}
+					// top={20}
+					// backgroundColor="#FDE8B2"
 				/>
 				<Sphere
-					height={20}
-					width={20}
-					right={20}
-					bottom={30}
-					backgroundColor="#A8CAE9"
+					imgHeight={20}
+					imgWidth={20}
+					cssClass="small"
+					// right={20}
+					// bottom={30}
+					// backgroundColor="#A8CAE9"
 				/>
 				<Sphere
-					height={1}
-					width={1}
-					right={20}
-					top={0}
-					backgroundColor="#EFB9F3"
+					imgHeight={1}
+					imgWidth={1}
+					cssClass="micro"
+					// right={20}
+					// top={0}
+					// backgroundColor="#EFB9F3"
 				/>
 				<Sphere
-					height={2}
-					width={2}
-					right={10}
-					bottom={20}
-					backgroundColor="#FFC09A"
+					imgHeight={2}
+					imgWidth={2}
+					cssClass="mini"
+					// right={10}
+					// bottom={20}
+					// backgroundColor="#FFC09A"
 				/>
 				<Sphere
-					height={40}
-					width={40}
-					left={0}
-					top={70}
-					backgroundColor="#FFA56E"
+					imgHeight={40}
+					imgWidth={40}
+					cssClass="medium"
+					// left={0}
+					// top={70}
+					// backgroundColor="#FFA56E"
 				/>
 			</div>
 		</>

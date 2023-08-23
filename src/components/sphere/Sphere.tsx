@@ -9,16 +9,7 @@ import { SphereProps } from "../../types/SphereProps";
 const Sphere: React.FC<SphereProps> = (props: SphereProps) => {
 	return (
 		<span
-			className="sphere"
-			style={{
-				backgroundColor: props.backgroundColor,
-				width: props.width,
-				height: props.height,
-				bottom: `${props.bottom}%`,
-				top: `${props.top}%`,
-				left: `${props.left}%`,
-				right: `${props.right}%`,
-			}}
+			className={`sphere ${props.cssClass}`}
 		>
 			{!props.src ? (
 				<></>
@@ -27,8 +18,8 @@ const Sphere: React.FC<SphereProps> = (props: SphereProps) => {
 					src={props.src}
 					alt="A cutting board with veggies on top"
 					className="food"
-					width={`${props.width} px`}
-					height={`${props.height} px`}
+					width={`${props.imgWidth} px`}
+					height={`${props.imgHeight} px`}
 				/>
 			)}
 		</span>
