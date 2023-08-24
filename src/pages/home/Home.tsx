@@ -16,7 +16,9 @@ const HomePageFC: React.FC = () => {
 				<HomeBackground />
 				<div className="home-container">
 					<UnauthenticatedTemplate>
-						<h1>Ooops! You could not be authenticated , try again</h1>
+						<div className="home-unauthenticated">
+							<h1>Ooops! You could not be authenticated , try again</h1>
+						</div>
 					</UnauthenticatedTemplate>
 					<AuthenticatedTemplate>
 						<div className="home-container-content">

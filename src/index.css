@@ -70,10 +70,32 @@ body {
 	--color-black: #121212;
 	--color-white: #fff;
 
-	/*Color wheels: For components like background spheres , flags, etc*/
-	--color-wheel-one: #EFB9F3;
-	--color-wheel-two: #DBFE87;
-	--color-wheel-three: #FFA56E;
+	/*Color wheels: For components like background spheres , flags, etc. 
+	we'll organize them by colors so that it's easier to choose and select the desired tone
+	*/
+
+	/*Color wheel pink*/
+
+	--color-wheel-pink-1: #FFB0BD;
+	--color-wheel-pink-2: #EFB9F3;
+	--color-wheel-pink-3: #E40060;
+
+	/*Color wheel orange*/
+	--color-wheel-orange-1: #FFA56E;
+	--color-wheel-orange-2: #FFC09A;
+	--color-wheel-orange-3: #FFA56E;
+
+	/*Color wheel blue*/
+	--color-wheel-blue-1: #A8CAE9;
+
+	/*Color wheel green*/
+	--color-wheel-green-1: #DBFE87;
+	--color-wheel-green-2: #A2BD63;
+
+	
+	/*Color wheel yellow*/
+	--color-wheel-yellow-1: #FDE8B2;
+	
 
 	/*These are the font families we'll define globally. We'll add fallbacks in the same variables*/
 

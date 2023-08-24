@@ -18,16 +18,104 @@
 	right: 0;
 }
 
+/*These styles are for the left column of circles*/
+
+.circles-column-left>.sphere:nth-child(1) {
+	top: calc(10% * 0);
+	left: calc(10px * 6);
+}
+
+.circles-column-left>.sphere:nth-child(2) {
+	top: calc(20% * 2);
+	left: calc(10px * 8);
+}
+
+.circles-column-left>.sphere:nth-child(3) {
+	top: calc(20% * 4);
+	left: calc(10px * 6);
+}
+
+.circles-column-left>.sphere:nth-child(4) {
+	top: calc(20% * 2);
+	left: calc(10px * 10);
+}
+
+.circles-column-left>.sphere:nth-child(5) {
+	top: calc(20% * 3);
+	left: calc(10px * 1);
+}
+
+.circles-column-left>.sphere:nth-child(6) {
+	top: calc(20% * 2);
+	left: calc(10px * 6);
+}
+
+.circles-column-left>.sphere:nth-child(7) {
+	top: calc(20% * 1);
+	left: calc(10px * 2);
+}
+
+.circles-column-left>.sphere:nth-child(8) {
+	top: calc(20% * 4);
+	left: calc(10px * 20);
+}
+
+/*These styles are for the right column of circles*/
+
+.circles-column-right>.sphere:nth-child(1) {
+	top: calc(10% * 0);
+	right: calc(10px * 6);
+}
+
+.circles-column-right>.sphere:nth-child(2) {
+	top: calc(20% * 1);
+	right: calc(10px * 8);
+}
+
+.circles-column-right>.sphere:nth-child(3) {
+	top: calc(20% * 3);
+	right: calc(10px * 6);
+}
+
+.circles-column-right>.sphere:nth-child(4) {
+	top: calc(20% * 2);
+	right: calc(10px * 10);
+}
+
+.circles-column-right>.sphere:nth-child(5) {
+	top: calc(20% * 3);
+	right: calc(10px * 1);
+}
+
+.circles-column-right>.sphere:nth-child(6) {
+	top: calc(20% * 2);
+	right: calc(10px * 6);
+}
+
+.circles-column-right>.sphere:nth-child(7) {
+	top: calc(20% * 1);
+	right: calc(10px * 2);
+}
+
+.circles-column-right>.sphere:nth-child(8) {
+	top: calc(20% * 4);
+	right: calc(10px * 20);
+}
+
 @media screen and (max-width: 460px) {
-	.circles-column-left {
+	 .circles-column-left {
 		display: none;
+	}
+
+	.circles-column-left > .sphere {
+		top: 0;
+		top: 20%
 	}
 
 	.circles-column-right {
 		display: flex;
 		justify-content: center;
-	}
+	} 
 }
 
-@keyframes bouncy {
-}
+@keyframes bouncy {}

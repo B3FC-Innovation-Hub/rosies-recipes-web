@@ -38,6 +38,29 @@
     opacity: 40%;
 }
 
+.images-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.images-container > .sphere:nth-child(1) {
+    top: 10%;
+    right: 20px;
+}
+
+.images-container > .sphere:nth-child(2) {
+    top: 50%;
+    right: 60px;
+}
+
+.images-container > .sphere:nth-child(3) {
+    top: 80%;
+    right: 40px;
+}
+
 @media screen and (max-width: 460px) {
     .stripes {
         width: 30%;

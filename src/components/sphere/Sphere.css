@@ -16,41 +16,48 @@
 	right: auto;
 	top:auto;
 	bottom: auto;
+	background-color: var(--color-wheel-green-2);
 }
 
 .sphere.mini {
 	width: 2px;
 	height: 2px;
+	background-color: var(--color-wheel-orange-1);
 }
 .sphere.xsmall {
 	width: 5px;
 	height: 5px;
+	background-color: var(--color-wheel-pink-1);
 }
 
 .sphere.small {
 	width: 20px;
 	height: 20px;
+	background-color: var(--color-wheel-blue-1);
 }
 
 
 .sphere.medium {
-	height: 40px;
-	width: 40px;
-}
-
-.sphere.big {
-	width: 150px;
-	height: 150px;
+	height: 60px;
+	width: 60px;
+	background-color: var(--color-wheel-orange-2);
 }
 
 .sphere.large {
 	width: 100px;
 	height: 100px;
-
+	background-color: var(--color-wheel-pink-2);
 }
+.sphere.big {
+	width: 150px;
+	height: 150px;
+	background-color: var(--color-wheel-green-1);
+}
+
 .sphere.xlarge {
 	width: 200px;
 	height: 200px;
+	background-color: var(--color-wheel-pink-3);
 }
 
 
@@ -59,15 +66,4 @@
 .food {
 	background-size: contain;
 	position: relative;
-}
-
-@media screen and (max-width: 1200px) {
-	.sphere:first-child {
-		transform: scale(0.8);
-		top: 0px;
-	}
-	.sphere:last-child {
-		transform: scale(0.8);
-		bottom: 0px;
-	}
 }
