@@ -10,11 +10,11 @@ import { pca } from "./context/msal/constants";
 
 function App() {
 	return (
-		<MsalProvider instance={pca}>
-			<div className="App">
-				<RoutesContainer />
-			</div>
-		</MsalProvider>
+		<div className="App">
+			<RoutesContainer />
+		</div>
+		// <MsalProvider instance={pca}>
+		// </MsalProvider>
 	);
 }
 
