@@ -1,5 +1,7 @@
+import { MsalProvider } from "@azure/msal-react";
 import "./App.css";
 import RoutesContainer from "./routes/Routes";
+import { pca } from "./context/msal/constants";
 
 /**
  * MSAL stands for Microsoft Authentication Library .
@@ -8,11 +10,11 @@ import RoutesContainer from "./routes/Routes";
 
 function App() {
 	return (
-		<div className="App">
-			<RoutesContainer />
-		</div>
-		// <MsalProvider instance={pca}>
-		// </MsalProvider>
+		<MsalProvider instance={pca}>
+			<div className="App">
+				<RoutesContainer />
+			</div>
+		</MsalProvider>
 	);
 }
 
