@@ -3,8 +3,6 @@ import { Configuration, PublicClientApplication } from "@azure/msal-browser";
 const tenantId = process.env.REACT_APP_TENANT_ID;
 const clientId = process.env.REACT_APP_CLIENT_ID;
 const url =process.env.REACT_APP_URI;
-
-console.log(process.env.NODE_ENV, clientId, url);
 /*
 	Both client id and tenant id can be found in Azure's App Registrations 
 */
