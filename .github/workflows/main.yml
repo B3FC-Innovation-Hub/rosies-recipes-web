@@ -58,6 +58,9 @@ jobs:
   
       - name: Install dependencies
         run: npm install
+
+      - name: Install env cmd
+        run: npm install env-cmd
   
       - name: Build
         run: env-cmd -f ${{env.REACT_APP_CLIENT_ID}}${{env.REACT_APP_TENANT_ID}}${{env.REACT_APP_URI}} npm run build
