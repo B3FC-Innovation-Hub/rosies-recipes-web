@@ -60,7 +60,16 @@ jobs:
         run: npm install
   
       - name: Build
-        run: npm run build
+        run: | 
+          echo "REACT_APP_CLIENT_ID=${{ env.REACT_APP_CLIENT_ID }}" > .env.prod
+          echo "REACT_APP_TENANT_ID=${{ env.REACT_APP_TENANT_ID }}" >> .env.prod
+          echo "REACT_APP_URI=${{ env.REACT_APP_URI }} >> .env.prod"
+          
+          npm run build
+        env: 
+          REACT_APP_CLIENT_ID: ${{ env.REACT_APP_CLIENT_ID }}
+          REACT_APP_TENANT_ID: ${{ env.REACT_APP_TENANT_ID }}
+          REACT_APP_URI: ${{ env.REACT_APP_URI }}
 
       - name: Build And Deploy
         id: builddeploy
