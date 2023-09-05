@@ -1,30 +1,8 @@
 import { Configuration, PublicClientApplication } from "@azure/msal-browser";
 
 const tenantId = process.env.REACT_APP_TENANT_ID;
-let clientId;
-let url;
-
-switch (process.env.NODE_ENV) {
-case "development": {
-	clientId = process.env.REACT_APP_DEV_CLIENT_ID;
-	url = process.env.REACT_APP_DEV_URI;
-	break;
-}
-case "production": {
-	clientId = process.env.REACT_APP_PROD_CLIENT_ID;
-	url = process.env.REACT_APP_PROD_URI;
-	break;
-}
-case "test": {
-	clientId = process.env.REACT_APP_DEV_CLIENT_ID;
-	url = process.env.REACT_APP_DEV_URI;
-	break;
-}
-default: {
-	clientId = process.env.REACT_APP_DEV_CLIENT_ID;
-	url = process.env.REACT_APP_DEV_URI;
-}
-}
+const clientId = process.env.REACT_APP_CLIENT_ID;
+const url =process.env.REACT_APP_URI;
 
 console.log(process.env.NODE_ENV, clientId, url);
 /*
