@@ -4,7 +4,6 @@ import { AuthenticatedTemplate, UnauthenticatedTemplate } from "@azure/msal-reac
 import "./Home.css";
 import { ReactComponent as SearchIcon } from "../../assets/icons/search-icon.svg";
 import { ReactComponent as UploadIcon } from "../../assets/icons/upload-icon.svg";
-import "./Home.css";
 import HomeBackground from "./home-bg/HomeBackground";
 import Footer from "../../components/footer/Footer";
 
@@ -12,7 +11,7 @@ const HomePageFC: React.FC = () => {
 	const navigate = useNavigate();
 	return (
 		<>
-			<div className="wrapper">
+			<div className="home-wrapper">
 				<HomeBackground />
 				<div className="home-container">
 					<UnauthenticatedTemplate>
@@ -35,7 +34,7 @@ const HomePageFC: React.FC = () => {
 							<Button
 								title="Upload"
 								color="accent"
-								onClick={() => navigate("/")}
+								onClick={() => navigate("/upload")}
 								icon={<SearchIcon />}
 							/>
 							<Button

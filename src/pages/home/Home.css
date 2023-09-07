@@ -1,4 +1,4 @@
-.wrapper {
+.home-wrapper {
     display: flex;
     flex-direction: column;
     height: calc(100% - var(--top-bar-height));

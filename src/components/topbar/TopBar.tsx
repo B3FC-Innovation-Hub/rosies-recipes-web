@@ -8,7 +8,7 @@ import Button from '../button/Button';
 
 const TopBar: React.FC<TopBarProps> = (props: TopBarProps) => {
 	const { instance } = useMsal();
-	const redirectStartPage = process.env.REACT_APP_DEV_URI;
+	const redirectStartPage = process.env.REACT_APP_URI;
 
 	const request: RedirectRequest = {
 		scopes: [],
@@ -37,7 +37,7 @@ const TopBar: React.FC<TopBarProps> = (props: TopBarProps) => {
 				</div>
 				<div className='menu-right'>
 					<p className='topbar-username'>Signed in as {props.username}</p>
-					<div>
+					<div className='logout-button'>
 						<Button
 							title="Sign out"
 							color="secondary"

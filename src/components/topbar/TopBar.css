@@ -10,6 +10,8 @@
 .topbar-username {
     font-family: var(--font-raleway-semibold);
     margin-right: 8px;
+    display: flex;
+    align-self: center;
 }
 
 .top-bar-container {
@@ -19,7 +21,6 @@
     background-color: var(--color-accent);
     color: var(--color-white);
     align-items: center;
-    padding: 8px;
     z-index: 2;
     justify-content: space-between;
 }
@@ -35,4 +36,8 @@
 
 .topbar-icon {
     padding: 6px;
+}
+
+.logout-button {
+    display: flex;
 }

@@ -1,0 +1,132 @@
+.upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - var(--top-bar-height));
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    /*
+        In order to fit under the navbar
+    */
+    margin-top: var(--top-bar-height);
+}
+
+.upload-container {
+    height: inherit;
+    display: flex;
+    flex: 1;
+    background-color: var(--color-primary-ultra-light);
+    color: var(--color-primary-darker);
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+}
+
+.upload-container.desktop, .upload-container.tablet {
+    flex-direction: row;
+}
+.upload-container.mobile {
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-container.mobile > .upload-progress-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    width: fit-content;
+    width:-moz-available;
+}
+
+.upload-progress-wrapper {
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    /*For support on Firefox and Firefox for Android*/
+    height: -moz-available;
+    justify-content: flex-end;
+    padding: 16px 16px 0 0;
+}
+
+.upload-button-wrapper {
+    padding-top: 16px;
+}
+
+.upload-container-content {
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 24px;
+    justify-content: space-around;
+}
+
+.upload-header {
+    font-size: 3rem;
+    font-family: "IBM Plex Serif Regular", Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.upload-input {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.upload-content {
+    color: var(--color-primary-darker);
+    font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    margin: 24px;
+}
+
+@media screen and (max-width: 460px) {
+    .upload-container-content {
+        width: inherit;
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-left: 12px;
+        margin-right: 12px;
+        overflow-y: scroll;
+    }
+
+    .upload-inputs-wrappper {
+        width: inherit;
+    }
+
+    .upload-header {
+        font-size: 2rem;
+    }
+
+    .upload-content {
+        font-size: large;
+    }
+
+    .button-row {
+        align-self: center;
+    }
+
+    .upload-button-wrapper {
+        display: flex;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .upload-header {
+        font-size: 4rem;
+    }
+}
