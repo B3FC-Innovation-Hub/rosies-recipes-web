@@ -18,7 +18,7 @@ function parseSizeProp(size:string):string{
 }
 return (
 		<span
-			className={`sphere ${props.cssClass}`}
+                        className={`sphere ${parseSizeProp(props.size)}`}
 		>
 			{!props.src ? (
 				<></>
