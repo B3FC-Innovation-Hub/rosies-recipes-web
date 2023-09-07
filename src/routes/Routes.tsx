@@ -10,7 +10,7 @@ const RoutesContainer: React.FC = () => {
 	//To pass the username of the logged account, if it exists
 
 	const { accounts } = useMsal();
-	const username=accounts[0]?accounts[0].name??accounts[0].username:"Anonymous";
+	const username=(accounts[0] ? accounts[0].name || accounts[0].username || undefined : undefined) ?? "Anonymous";
 	return(
 		<BrowserRouter>	
 			<Routes>
