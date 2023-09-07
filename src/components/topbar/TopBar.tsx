@@ -36,8 +36,7 @@ const TopBar: React.FC<TopBarProps> = (props: TopBarProps) => {
 					
 				</div>
 				<div className='menu-right'>
-					{props.username && <p className='topbar-username'>Signed in as {props.username}</p>}
-					{props.name && <p className='topbar-username'>Signed in as {props.name}</p>}
+					<p className='topbar-username'>Signed in as {props.username}</p>
 					<div className='logout-button'>
 						<Button
 							title="Sign out"
