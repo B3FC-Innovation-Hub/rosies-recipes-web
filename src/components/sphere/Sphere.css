@@ -55,7 +55,40 @@
 	background-color: var(--color-wheel-pink-3);
 }
 
+.sphere.micro img {
+	width: 10px;
+	height: 10px;
+}
 
+.sphere.mini img {
+	width: 10px;
+	height: 10px;
+}
+
+.sphere.small img{
+	width: 10px;
+	height: 10px;
+}
+
+.sphere.medium img{
+	height: 60px;
+	width: 60px;
+}
+
+.sphere.large img{
+	width: 100px;
+	height: 100px;
+}
+
+.sphere.big img {
+	width: 150px;
+	height: 150px;
+}
+
+.sphere.xlarge img {
+	width: 200px;
+	height: 200px;
+}
 .food {
 	background-size: contain;
 	position: relative;
