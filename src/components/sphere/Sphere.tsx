@@ -27,8 +27,6 @@ const Sphere: React.FC<SphereProps> = (props: SphereProps) => {
 					src={props.img}
 					alt="A cutting board with veggies on top"
 					className="food"
-					width={`${props.imgWidth} px`}
-					height={`${props.imgHeight} px`}
 				/>
 			)}
 		</span>

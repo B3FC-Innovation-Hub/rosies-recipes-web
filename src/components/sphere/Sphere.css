@@ -8,6 +8,7 @@
 	padding: 20px;
 }
 
+/*The styles for the different sphere classes*/
 .sphere.micro {
 	width: 1px;
 	height: 1px;
@@ -18,7 +19,6 @@
 	bottom: auto;
 	background-color: var(--color-wheel-green-2);
 }
-
 .sphere.mini {
 	width: 2px;
 	height: 2px;
@@ -29,20 +29,16 @@
 	height: 5px;
 	background-color: var(--color-wheel-pink-1);
 }
-
 .sphere.small {
 	width: 20px;
 	height: 20px;
 	background-color: var(--color-wheel-blue-1);
 }
-
-
 .sphere.medium {
 	height: 60px;
 	width: 60px;
 	background-color: var(--color-wheel-orange-2);
 }
-
 .sphere.large {
 	width: 100px;
 	height: 100px;
@@ -53,14 +49,11 @@
 	height: 150px;
 	background-color: var(--color-wheel-green-1);
 }
-
 .sphere.xlarge {
 	width: 200px;
 	height: 200px;
 	background-color: var(--color-wheel-pink-3);
 }
-
-
 
 
 .food {

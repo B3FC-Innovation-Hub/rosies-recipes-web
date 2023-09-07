@@ -18,20 +18,14 @@ const SpheresBackground: React.FC<any> = () => {
 		<>
 			<div className="circles-column-left">
 				<Sphere
-					imgHeight={150}
-					imgWidth={150}
 					img={spatula}
 					size="big"
 				/>
 				<Sphere
-					imgHeight={150}
-					imgWidth={150}
 					img={cookie}
 					size="xlarge"
 				/>
 				<Sphere
-					imgHeight={150}
-					imgWidth={150}
 					img={pancakes}
 					size="large"
 				/>
@@ -54,19 +48,13 @@ const SpheresBackground: React.FC<any> = () => {
 			<div className="circles-column-right">
 				<Sphere
 					img={carrot}
-					imgHeight={100}
-					imgWidth={100}
 					size="medium"
 				/>
 				<Sphere
-					imgHeight={200}
-					imgWidth={200}
 					size="xlarge"
 					img={ramen}
 				/>
 				<Sphere
-					imgHeight={120}
-					imgWidth={120}
 					img={blender}
 					size="big"
 				/>

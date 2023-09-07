@@ -18,6 +18,4 @@
 export type SphereProps = {
     size: string;
     img?: string;
-    imgWidth?: number;
-    imgHeight?: number;
 }
