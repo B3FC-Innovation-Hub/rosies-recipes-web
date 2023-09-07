@@ -20,70 +20,70 @@ const SpheresBackground: React.FC<any> = () => {
 				<Sphere
 					imgHeight={150}
 					imgWidth={150}
-					src={spatula}
-					cssClass="big"
+					img={spatula}
+					size="big"
 				/>
 				<Sphere
 					imgHeight={150}
 					imgWidth={150}
-					src={cookie}
-					cssClass="xlarge"
+					img={cookie}
+					size="xlarge"
 				/>
 				<Sphere
 					imgHeight={150}
 					imgWidth={150}
-					src={pancakes}
-					cssClass="large"
+					img={pancakes}
+					size="large"
 				/>
 				<Sphere
-					cssClass="small"
+					size="small"
 				/>
 				<Sphere
-					cssClass="xsmall"
+					size="xsmall"
 				/>
 				<Sphere
-					cssClass="xsmall"
+					size="xsmall"
 				/>
 				<Sphere
-					cssClass="medium"
+					size="medium"
 				/>
 				<Sphere
-					cssClass="micro"
+					size="micro"
 				/>
 			</div>
 			<div className="circles-column-right">
 				<Sphere
-					src={carrot}
+					img={carrot}
 					imgHeight={100}
 					imgWidth={100}
-					cssClass="medium"
+					size="medium"
 				/>
 				<Sphere
 					imgHeight={200}
 					imgWidth={200}
-					cssClass="xlarge"
-					src={ramen}
+					size="xlarge"
+					img={ramen}
 				/>
 				<Sphere
 					imgHeight={120}
 					imgWidth={120}
-					src={blender}
-					cssClass="big"
+					img={blender}
+					size="big"
 				/>
 				<Sphere
-					cssClass="small"
+					size="small"
 				/>
 				<Sphere
-					cssClass="small"
+					size="small"
 				/>
 				<Sphere
-					cssClass="micro"
+					size="micro"
 				/>
 				<Sphere
-					cssClass="mini"
+					size="mini"
 				/>
 				<Sphere
-					cssClass="medium"
+					size="medium"
 				/>
 			</div>
 		</>

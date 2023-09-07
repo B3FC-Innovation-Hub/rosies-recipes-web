@@ -8,23 +8,23 @@ import { SphereProps } from "../../types/SphereProps";
 
 const Sphere: React.FC<SphereProps> = (props: SphereProps) => {
 
-function parseSizeProp(size:string):string{
-  size=size.startsWith('sphere-')?size.slice(7):size
-  if(!['micro','xsmall','small','medium','large','big','xlarge'].contains(size)){
-    console.warn("Not a recognized size for Spheres: "+size);
-    return 'large'
-  }
-  return size
-}
-return (
+	function parseSizeProp(size:string):string{
+		size=size.startsWith('sphere-')?size.slice(7):size;
+		if(!['micro','xsmall','small','medium','large','big','xlarge'].includes(size)){
+			console.warn("Not a recognized size for Spheres: "+size);
+			return 'large';
+		}
+		return size;
+	}
+	return (
 		<span
-                        className={`sphere ${parseSizeProp(props.size)}`}
+			className={`sphere ${parseSizeProp(props.size)}`}
 		>
-			{!props.src ? (
+			{!props.img ? (
 				<></>
 			) : (
 				<img
-					src={props.src}
+					src={props.img}
 					alt="A cutting board with veggies on top"
 					className="food"
 					width={`${props.imgWidth} px`}

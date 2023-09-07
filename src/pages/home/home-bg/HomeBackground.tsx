@@ -9,9 +9,9 @@ const HomeBackground: React.FC = () => {
 	return (
 		<div className='stripes-container'>
 			<div className='images-container'>
-				<Sphere src={droolingFace} imgHeight={150} imgWidth={150} cssClass={'big'} />
-				<Sphere src={spaghetti} imgHeight={100} imgWidth={100} cssClass={'large'} />
-				<Sphere src={cheesecake} imgHeight={60} imgWidth={60} cssClass={'medium'} />
+				<Sphere img={droolingFace} imgHeight={150} imgWidth={150} size={'big'} />
+				<Sphere img={spaghetti} imgHeight={100} imgWidth={100} size={'large'} />
+				<Sphere img={cheesecake} imgHeight={60} imgWidth={60} size={'medium'} />
 			</div>
 			<div className='stripes'>
 				<div className='stripes darker'>

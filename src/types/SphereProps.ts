@@ -16,8 +16,8 @@
 
 
 export type SphereProps = {
-    cssClass: string | undefined;
-    src?: string;
+    size: string;
+    img?: string;
     imgWidth?: number;
     imgHeight?: number;
 }
