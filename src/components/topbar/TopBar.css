@@ -1,0 +1,38 @@
+.top-bar-wrapper-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.topbar-username {
+    font-family: var(--font-raleway-semibold);
+    margin-right: 8px;
+}
+
+.top-bar-container {
+    width: 100%;
+    height: var(--top-bar-height);
+    display: flex;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    align-items: center;
+    padding: 8px;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.menu-left {
+    padding-left: 8px;
+}
+
+.menu-right {
+    padding-right: 16px;
+    display: flex;
+}
+
+.topbar-icon {
+    padding: 6px;
+}

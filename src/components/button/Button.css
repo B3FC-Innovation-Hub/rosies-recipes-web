@@ -16,14 +16,23 @@ font settings, so we have to set all their css properties manually*/
 	z-index: 1;
 }
 
-.button.green {
+.button.color-secondary {
 	background-color: var(--color-secondary);
-	color: var(--black);
+	color: var(--color-black);
 }
 
-.button.pink {
+.button.button.color-secondary > .button-icon {
+	fill: var(--color-black);
+}
+
+
+.button.color-accent {
 	background-color: var(--color-accent);
 	color: var(--color-white);
+}
+
+.button.color-accent > .button-icon {
+	fill: var(--color-white);
 }
 
 
@@ -33,9 +42,16 @@ font settings, so we have to set all their css properties manually*/
 	border-radius: 50%;
 }
 
-.btn-icon {
-	height: 24px;
-	padding: 4px;
+
+.button.fab {
+	height: 38px;
+	width: 38px;
+	border-radius: 50%;
+}
+
+.button-icon {
+	display: flex;
+	padding: 6px;
 }
 
 .btn-title {

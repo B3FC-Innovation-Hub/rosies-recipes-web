@@ -13,7 +13,7 @@ const Modal: React.FC<ModalProps> = (props: ModalProps) => {
 			<div className={`modal-container ${props.cssClass}`}>
 				{props.toggable && (
 					<div className="modal-button-wrapper">
-						<Button color="pink" icon={<CloseIcon />} cssClass="fab" />
+						<Button color="accent" icon={<CloseIcon />} cssClass="fab" />
 					</div>
 				)}
 				<h2 className="modal-title">{props.modalTitle}</h2>

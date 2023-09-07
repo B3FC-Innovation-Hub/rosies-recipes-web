@@ -18,117 +18,60 @@ const SpheresBackground: React.FC<any> = () => {
 		<>
 			<div className="circles-column-left">
 				<Sphere
-					height={150}
-					width={150}
-					src={spatula}
-					left={10}
-					top={0}
-					backgroundColor="#FDE8B2"
+					img={spatula}
+					size="big"
 				/>
 				<Sphere
-					height={150}
-					width={150}
-					src={cookie}
-					backgroundColor="#FFB0BD"
-					top={70}
-					left={12}
+					img={cookie}
+					size="xlarge"
 				/>
 				<Sphere
-					height={150}
-					width={150}
-					src={pancakes}
-					backgroundColor="#E40060"
-					top={40}
-					left={4}
+					img={pancakes}
+					size="large"
 				/>
 				<Sphere
-					height={20}
-					width={20}
-					left={10}
-					top={30}
-					backgroundColor="#A8CAE9"
+					size="small"
 				/>
 				<Sphere
-					height={5}
-					width={5}
-					left={20}
-					top={50}
-					backgroundColor="#EFB9F3"
+					size="xsmall"
 				/>
 				<Sphere
-					height={5}
-					width={5}
-					left={10}
-					top={0}
-					backgroundColor="#FFC09A"
+					size="xsmall"
 				/>
 				<Sphere
-					height={40}
-					width={40}
-					left={0}
-					top={70}
-					backgroundColor="#FFA56E"
+					size="medium"
+				/>
+				<Sphere
+					size="micro"
 				/>
 			</div>
 			<div className="circles-column-right">
 				<Sphere
-					height={100}
-					width={100}
-					src={carrot}
-					top={80}
-					right={6}
-					backgroundColor="#EFB9F3"
+					img={carrot}
+					size="medium"
 				/>
 				<Sphere
-					height={120}
-					width={120}
-					src={blender}
-					backgroundColor="#FFA56E"
-					top={0}
-					right={10}
+					size="xlarge"
+					img={ramen}
 				/>
 				<Sphere
-					height={200}
-					width={200}
-					top={30}
-					right={6}
-					src={ramen}
-					backgroundColor="#E40060"
+					img={blender}
+					size="big"
 				/>
 				<Sphere
-					height={10}
-					width={10}
-					right={5}
-					top={20}
-					backgroundColor="#FDE8B2"
+					size="small"
 				/>
 				<Sphere
-					height={20}
-					width={20}
-					right={20}
-					bottom={30}
-					backgroundColor="#A8CAE9"
+					size="small"
 				/>
 				<Sphere
-					height={1}
-					width={1}
-					right={20}
-					top={0}
-					backgroundColor="#EFB9F3"
+					size="micro"
 				/>
 				<Sphere
-					height={2}
-					width={2}
-					right={10}
-					bottom={20}
-					backgroundColor="#FFC09A"
+					size="mini"
 				/>
 				<Sphere
-					height={40}
-					width={40}
-					left={0}
-					top={70}
-					backgroundColor="#FFA56E"
+					size="medium"
 				/>
 			</div>
 		</>
