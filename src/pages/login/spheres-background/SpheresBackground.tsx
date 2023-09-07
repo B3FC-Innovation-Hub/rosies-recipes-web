@@ -1,6 +1,5 @@
 import "./SpheresBackground.css";
 import Sphere from "../../../components/sphere/Sphere";
-import { SpheresData } from "./SpheresData";
 import spatula from "../../../assets/food-assets/Spatula.png";
 import pancakes from "../../../assets/food-assets/Pancake.png";
 import cookie from "../../../assets/food-assets/cookie.png";
@@ -16,9 +15,7 @@ It consists of two columns with spheres components
 */
 
 const SpheresBackground: React.FC = () => {
-	//To divide the data array ento two equal parts
-	const spheresLeft = SpheresData.slice(0, Math.ceil(SpheresData.length / 2));
-	const spheresRight = SpheresData.slice(Math.ceil(SpheresData.length / 2));
+
 	return (
 		<>
 			<div className="circles-column-left">
