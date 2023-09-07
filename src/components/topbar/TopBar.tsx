@@ -8,7 +8,7 @@ import Button from '../button/Button';
 
 const TopBar: React.FC<TopBarProps> = (props: TopBarProps) => {
 	const { instance } = useMsal();
-	const redirectStartPage = process.env.REACT_APP_DEV_URI;
+	const redirectStartPage = process.env.REACT_APP_URI;
 
 	const request: RedirectRequest = {
 		scopes: [],
