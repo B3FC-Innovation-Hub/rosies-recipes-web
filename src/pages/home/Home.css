@@ -19,6 +19,7 @@
     color: var(--color-primary-darker);
     flex-direction: column;
     justify-content: center;
+
 }
 
 .home-unauthenticated {
@@ -33,6 +34,7 @@
 }
 
 .home-container-content {
+    position: relative;
     z-index: 1;
     height: 100%;
     width: 50%;
@@ -76,7 +78,9 @@ strong {
     .home-container-content {
         width: inherit;
         width: 50%;
-        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         overflow: hidden;
     }
 

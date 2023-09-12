@@ -1,4 +1,4 @@
-s.stripes-container {
+.stripes-container {
     display: flex;
     position: absolute;
     justify-content: flex-end;
@@ -15,7 +15,7 @@ s.stripes-container {
     flex-direction: row;
     width: 300px;
     height: inherit;
-    z-index: -1;
+    z-index: -2;
 }
 
 .stripes.darker {
@@ -40,18 +40,35 @@ s.stripes-container {
 
 .images-container {
     height: 100%;
+    width: 14rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
 }
 
-.image-item {
-    height: 100%;
-    position: absolute;
-    right: 0;
+.images-container >.sphere {
+    position: relative;
+    justify-content: space-between;
     animation: lightBounce 2s cubic-bezier(0.12, 0, 0.39, 0)
 }
 
-.image-item.two {
-    left: 20%;
+.images-container >.sphere:first-child {
+    display: flex;
+    align-self: flex-end;
 }
+
+.images-container >.sphere:nth-child(2){
+    display: flex;
+    align-self: flex-start;
+}
+
+.images-container >.sphere:last-child {
+    display: flex;
+    align-self: flex-end;
+}
+
 
 @media screen and (max-width: 1200px) {
     .stripes {
