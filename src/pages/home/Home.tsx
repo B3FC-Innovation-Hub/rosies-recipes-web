@@ -13,33 +13,7 @@ const HomePageFC: React.FC = () => {
 			<div className="home-wrapper">
 				<HomeBackground />
 				<div className="home-container">
-					<div>
-						<div className="home-container-content">
-							<h1 className="home-header">
-            Your meal starts <strong>here </strong>
-							</h1>
-							<p className="home-content">
-            Give me your best recipes, or browse recipes from my collection and
-            I will provide optimized step-by-step, optimized instructions, so
-            that you do not waste any time .
-							</p>
-						</div>
-						<div className="button-row">
-							<Button
-								title="Upload"
-								color="accent"
-								onClick={() => navigate("/upload")}
-								icon={<SearchIcon />}
-							/>
-							<Button
-								title="Browse"
-								color="accent"
-								onClick={() => navigate("/")}
-								icon={<UploadIcon />}
-							/>
-						</div>
-					</div>
-					{/* <UnauthenticatedTemplate>
+					<UnauthenticatedTemplate>
 						<div className="home-unauthenticated">
 							<h1>Ooops! You could not be authenticated , try again</h1>
 						</div>
@@ -69,7 +43,7 @@ const HomePageFC: React.FC = () => {
 								icon={<UploadIcon />}
 							/>
 						</div>
-					</AuthenticatedTemplate> */}
+					</AuthenticatedTemplate>
 				</div>
 			</div>
 		</>
