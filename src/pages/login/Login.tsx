@@ -35,10 +35,11 @@ const LoginPageFC: React.FC = () => {
 					<strong>Rosie's</strong> Recipes
 				</header>
 				<p className="login content-body">
-				Embark on a culinary journey like no other with Rosie by your side. 
-With Rosie’s step-by-step instructions, this app will guide you through the cooking process, ensuring your creations turn out perfectly, every time.  
-Whether you're seeking weeknight dinner inspiration, looking to impress guests with a gourmet feast, or simply exploring the joy of cooking, this AI Cooking Assistant is your ultimate companion in the kitchen.
+					Embark on a culinary journey like no other with Rosie by your side. 
+					With Rosie’s step-by-step instructions, this app will guide you through the cooking process, ensuring your creations turn out perfectly, every time.  
+					Whether you're seeking weeknight dinner inspiration, looking to impress guests with a gourmet feast, or simply exploring the joy of cooking, this AI Cooking Assistant is your ultimate companion in the kitchen.
 				</p>
+				<p>HELLO WORLD</p>
 				<Button
 					title="Login with 365"
 					color="secondary"
