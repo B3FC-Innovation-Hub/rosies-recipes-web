@@ -102,4 +102,3 @@ jobs:
           #2023-09-14 palun: trying to comment out this line because something inte building process creates the same line again at the bottom of this file
           azure_static_web_apps_api_token: ${{ env.AZURE_STATIC_WEB_APPS_API_TOKEN }} # secret containing api token for app
           action: "close"
-          app_location: ${{ env.APP_LOCATION }}
