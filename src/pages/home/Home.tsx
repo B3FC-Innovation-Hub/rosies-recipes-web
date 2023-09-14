@@ -31,6 +31,7 @@ const HomePageFC: React.FC = () => {
 								I will provide optimized step-by-step, optimized instructions, so
 								that you do not waste any time .
 							</div>
+							<div>hello world</div>
 						</div>
 						<div className="button-row">
 							<Button
