@@ -30,6 +30,7 @@ env:
   REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
   REACT_APP_TENANT_ID: ${{ secrets.REACT_APP_TENANT_ID }}
   REACT_APP_URI: ${{ secrets.REACT_APP_URI }}
+  CONFIG_FILE_LOCATION: "public"
 
 permissions:
   contents: read
@@ -83,6 +84,7 @@ jobs:
           app_location: ${{ env.APP_LOCATION }}
           api_location: ${{ env.API_LOCATION }}
           app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
+          config_file_location: ${{ env.CONFIG_FILE_LOCATION }}
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
