@@ -1,4 +1,10 @@
-import { Configuration, PublicClientApplication } from "@azure/msal-browser";
+import {
+	Configuration,
+	PublicClientApplication,
+	EventMessage,
+	EventType,
+	AuthenticationResult,
+} from "@azure/msal-browser";
 
 const tenantId = process.env.REACT_APP_TENANT_ID;
 const clientId = process.env.REACT_APP_CLIENT_ID;
@@ -24,3 +30,19 @@ export const configuration: Configuration = {
 };
 
 export const pca = new PublicClientApplication(configuration);
+
+pca.initialize().then(()=> {
+	const accounts = pca.getAllAccounts();
+	if(accounts.length > 0){
+		pca.setActiveAccount(accounts[0]);
+	}
+
+	pca.addEventCallback((event: EventMessage) => {
+		if(event.eventType === EventType.LOGIN_SUCCESS && event.payload){
+			const payload = event.payload as AuthenticationResult;
+			const account = payload.account;
+			console.log(account, payload);
+			pca.setActiveAccount(account);
+		}
+	});
+});
