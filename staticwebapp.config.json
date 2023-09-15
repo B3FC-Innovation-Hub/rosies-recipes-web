@@ -9,7 +9,7 @@
     "trailingSlash": "auto",
     "routes": [
         {
-            "route": "/**",
+            "route": "/*",
             "rewrite": "/index.html",
             "statusCode": 200
         }
