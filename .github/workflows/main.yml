@@ -30,7 +30,7 @@ env:
   REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
   REACT_APP_TENANT_ID: ${{ secrets.REACT_APP_TENANT_ID }}
   REACT_APP_URI: ${{ secrets.REACT_APP_URI }}
-  CONFIG_FILE_LOCATION: "/staticwebapp.config.json"
+  CONFIG_FILE_LOCATION: "/"
 
 permissions:
   contents: read
