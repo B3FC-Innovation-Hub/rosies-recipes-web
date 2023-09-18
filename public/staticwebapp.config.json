@@ -1,0 +1,30 @@
+{
+    "navigationFallback": {
+        "rewrite": "/index.html",
+        "exclude": [
+            "/static/media/*.{png,jpg,jpeg,gif,bmp}",
+            "/static/css/*",
+            "assets/*"
+        ]
+    },
+    "routes": [
+        {
+            "route": "/",
+            "statusCode": 200
+        },
+        {
+            "route": "/home*",
+            "rewrite": "/home.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/404.html",
+            "rewrite": "/404.html",
+            "statusCode": 404
+        }
+    ],
+    "globalHeaders": {
+        "Access-Control-Allow-Origin": "https://lemon-wave-01bf94003.3.azurestaticapps.net",
+        "Access-Control-Allow-Methods": "POST, GET, OPTIONS"
+    }
+}
