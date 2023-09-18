@@ -12,12 +12,10 @@
             "route": "/"
         },
         {
-            "route": "/home*",
-            "rewrite": "/home.html"
+            "route": "/home*"
         },
         {
-            "route": "/404",
-            "rewrite": "/404.html"
+            "route": "/404"
         }
     ],
     "globalHeaders": {
