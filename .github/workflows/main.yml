@@ -30,6 +30,7 @@ env:
   REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
   REACT_APP_TENANT_ID: ${{ secrets.REACT_APP_TENANT_ID }}
   REACT_APP_URI: ${{ secrets.REACT_APP_URI }}
+  CONFIG_FILE_LOCATION: ""
 
 permissions:
   contents: read
@@ -83,6 +84,7 @@ jobs:
           app_location: ${{ env.APP_LOCATION }}
           api_location: ${{ env.API_LOCATION }}
           app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
+          config_file_location: ${{ env.CONFIG_FILE_LOCATION }}
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
@@ -102,4 +104,3 @@ jobs:
           #2023-09-14 palun: trying to comment out this line because something inte building process creates the same line again at the bottom of this file
           azure_static_web_apps_api_token: ${{ env.AZURE_STATIC_WEB_APPS_API_TOKEN }} # secret containing api token for app
           action: "close"
-          app_location: ${{ env.APP_LOCATION }}

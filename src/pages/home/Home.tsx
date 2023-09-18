@@ -11,6 +11,7 @@ const HomePageFC: React.FC = () => {
 	const navigate = useNavigate();
 	return (
 		<>
+
 			<div className="home-wrapper">
 				<HomeBackground />
 				<div className="home-container">
@@ -22,13 +23,14 @@ const HomePageFC: React.FC = () => {
 					<AuthenticatedTemplate>
 						<div className="home-container-content">
 							<h1 className="home-header">
-            Your meal starts <strong>here </strong>
+								Your meal starts <strong>here </strong>
 							</h1>
-							<p className="home-content">
-            Give me your best recipes, or browse recipes from my collection and
-            I will provide optimized step-by-step, optimized instructions, so
-            that you do not waste any time .
-							</p>
+							<div className="home-content">
+
+								Give me your best recipes, or browse recipes from my collection and
+								I will provide optimized step-by-step, optimized instructions, so
+								that you do not waste any time .
+							</div>
 						</div>
 						<div className="button-row">
 							<Button
