@@ -30,7 +30,7 @@ env:
   REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
   REACT_APP_TENANT_ID: ${{ secrets.REACT_APP_TENANT_ID }}
   REACT_APP_URI: ${{ secrets.REACT_APP_URI }}
-  CONFIG_FILE_LOCATION: "/"
+  CONFIG_FILE_LOCATION: "public"
 
 permissions:
   contents: read
