@@ -9,8 +9,7 @@
     },
     "routes": [
         {
-            "route": "/",
-            "rewrite": "/index.html"
+            "route": "/"
         },
         {
             "route": "/home*",
