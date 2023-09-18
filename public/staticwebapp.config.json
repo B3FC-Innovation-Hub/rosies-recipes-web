@@ -9,18 +9,16 @@
     },
     "routes": [
         {
-            "route": "/",
-            "statusCode": 200
+            "route": "/".
+            "rewrite": "/index.html"
         },
         {
             "route": "/home*",
-            "rewrite": "/home.html",
-            "statusCode": 200
+            "rewrite": "/home.html"
         },
         {
-            "route": "/404.html",
-            "rewrite": "/404.html",
-            "statusCode": 404
+            "route": "/404",
+            "rewrite": "/404.html"
         }
     ],
     "globalHeaders": {
