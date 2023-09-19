@@ -4,7 +4,7 @@
     height: calc(100% - var(--top-bar-height));
     width: 100%;
     position: fixed;
-    padding-bottom: 16px;
+    padding-bottom: var(--height-footer);
     overflow: hidden;
     /*
         In order to fit under the navbar
