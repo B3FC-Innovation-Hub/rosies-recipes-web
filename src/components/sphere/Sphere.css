@@ -93,3 +93,24 @@
 	background-size: contain;
 	position: relative;
 }
+
+@media screen and (max-width: 1200px) {
+	.sphere:first-child {
+		transform: scale(0.8);
+	}
+	.sphere:last-child {
+		transform: scale(0.8);
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.sphere {
+		transform: scale(1.2);
+	}
+}
+
+@media screen and  (max-width: 1600px){
+	.sphere {
+		transform: scale(0.9);
+	}
+}

@@ -6,6 +6,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	animation: bouncy 10s cubic-bezier(0.12, 0, 0.39, 0) infinite
 }
 
 .circles-column-left {
@@ -16,6 +17,11 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	animation: bouncy 10s cubic-bezier(0.12, 0, 0.39, 0) infinite
+}
+
+.child-left, .child-right {
+	animation: bouncy 10s cubic-bezier(0.12, 0, 0.39, 0) infinite
 }
 
 /*These styles are for the left column of circles*/
@@ -118,4 +124,14 @@
 	} 
 }
 
-@keyframes bouncy {}
+@keyframes bouncy {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(20%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}

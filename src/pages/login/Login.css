@@ -58,20 +58,49 @@
 		min-width: 280px;
 	}
 
+	.login.image-background {
+		width: auto;
+	}
+
+	.login-bg-mobile-first, .login-bg-mobile-second , .login-bg-mobile-third {
+		position: absolute;
+		width: 100%;
+		height: 50%;
+		border-radius: 50%;
+	}
+
+	.login-bg-mobile-first {
+		background-color: var(--color-primary-light);
+		animation: floating 16s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
+	}
+	
+	.login-bg-mobile-second {
+		animation: floatingDown 16s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
+		background-color: var(--color-primary-dark);
+	}
+
+	.login-bg-mobile-third {
+		animation: floating 8s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
+		background-color: var(--color-primary-dark);
+	}
+
 	.login.content-body {
-		padding-left: 8px
+		padding-left: 16px;
+		max-width: 260px;
 	}
 
 	.login.content-container {
-		background-color: var(--color-primary-dark);
-		flex: 0 1;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		border-radius: 20px;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		flex-direction: column;
+		position: relative;
+		justify-content: center;
+		align-self: flex-start;
+		z-index: 2;
+		height: 100%;
+		width: 100%;
+		display: flex;
 	}
-	.login.content-header  {
+
+	.login.content-header {
 		align-self: flex-start;
 		max-width: 240px;
 		margin: 8px;
@@ -80,7 +109,8 @@
 	}
 
 	.login.content-body {
-		padding-left: 12px;
+		display: flex;
+		align-self: flex-start;
 	}
 
 	.content {
@@ -96,5 +126,42 @@
 		height: 100%;
 		transform: translate(-14%, 14%);
 		resize: inherit;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.login.content-container {
+		transform: scale(1.6);
+	}
+}
+@media screen and (max-width: 1600) {
+	.login.content-container {
+		transform: scale(0.9);
+	}
+}
+
+@keyframes floating {
+	0% {
+		transform: translate(0%, 0%);
+	}
+	50% {
+		transform: translate(0%, 60%);
+	}
+	100% {
+		transform: translate(0%, 0%);
+	}
+
+	
+
+}
+@keyframes floatingDown {
+	0% {
+		transform: translate(-20%, 0%);
+	}
+	50% {
+		transform: translate(-20%, -60%);
+	}
+	100% {
+		transform: translate(-20%, 0%);
 	}
 }

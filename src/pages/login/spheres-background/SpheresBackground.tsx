@@ -6,6 +6,7 @@ import cookie from "../../../assets/food-assets/cookie.png";
 import carrot from "../../../assets/food-assets/Carrot.png";
 import ramen from "../../../assets/food-assets/Ramen Noodles.png";
 import blender from "../../../assets/food-assets/Blender.png";
+import React from "react";
 
 /*The purpose of this component is to modularize the background of our login page
 which contains several sphere components that need to be in a specific order and position in
@@ -13,7 +14,8 @@ order to look correct .
 It consists of two columns with spheres components
 */
 
-const SpheresBackground: React.FC<any> = () => {
+const SpheresBackground: React.FC = () => {
+
 	return (
 		<>
 			<div className="circles-column-left">

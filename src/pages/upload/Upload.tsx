@@ -1,11 +1,9 @@
 import React from "react";
 import Button from "../../components/button/Button";
-import Footer from "../../components/footer/Footer";
 import Input from "../../components/input/Input";
 import useBreakpoint from "use-breakpoint";
 import "./Upload.css";
-
-const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 1280 };
+import { BREAKPOINTS } from "../../context/constants/Breakpoints";
 
 const UploadPageFC: React.FC = () => {
 	/*
@@ -23,7 +21,7 @@ const UploadPageFC: React.FC = () => {
 				<div className="upload-container-content">
 					<h1 className="upload-header">Let the good food begin</h1>
 					<p className="upload-content">
-            Did you bring your uwn recipes with you? Then you are in the right
+            Did you bring your own recipes with you? Then you are in the right
             place . You can paste the url of your recipe or paste a whole recipe
             on the text boxes below.
 					</p>
@@ -48,7 +46,6 @@ const UploadPageFC: React.FC = () => {
 					}
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

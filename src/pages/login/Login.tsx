@@ -1,11 +1,10 @@
 import Button from "../../components/button/Button";
 import "./Login.css";
 import background from "../../assets/background-spheres.png";
-import Footer from "../../components/footer/Footer";
 import SpheresBackground from "./spheres-background/SpheresBackground";
-import {
-	useMsal,
-} from "@azure/msal-react";
+import { useMsal } from "@azure/msal-react";
+import useBreakpoint from "use-breakpoint";
+import { BREAKPOINTS } from "../../context/constants/Breakpoints";
 
 /**
  * This is our root component and here is where the user will log in with their Microsoft account
@@ -13,6 +12,12 @@ import {
 
 const LoginPageFC: React.FC = () => {
 	const { instance } = useMsal();
+	//In order to track the breakpoints and render the bg on mobile devices only
+	const { breakpoint } = useBreakpoint(
+		BREAKPOINTS,
+		//Default breakpoint value
+		"desktop"
+	);
 
 	const loginAuthHandler = () => {
 		try {
@@ -30,6 +35,16 @@ const LoginPageFC: React.FC = () => {
 				className="login image-background"
 			/>
 			<SpheresBackground />
+			{breakpoint === "mobile" && (
+				<>
+					{
+					/**TODO: remame this classes pls */
+					}
+					<div className="login-bg-mobile-first"></div>
+					<div className="login-bg-mobile-second"></div>
+					<div className="login-bg-mobile-third"></div>
+				</>
+			)}
 			<div className="login content-container">
 				<header className="login content-header">
 					<strong>Rosie's</strong> Recipes
@@ -45,7 +60,6 @@ Whether you're seeking weeknight dinner inspiration, looking to impress guests w
 					onClick={() => loginAuthHandler()}
 				/>
 			</div>
-			<Footer />
 		</div>
 	);
 };

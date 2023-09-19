@@ -45,6 +45,7 @@ body {
 
 	/*Sizing variables*/
 	--top-bar-height: 60px;
+	--height-footer: 16px
 
 	/*These are the color variables we'll define globally*/
 
@@ -63,8 +64,9 @@ body {
 	/*Secondary*/
 	--color-secondary: #dbfe87;
 
-	/*Accent*/
-	--color-warn: #ff8c42;
+  /*Accent*/
+  --color-warn-light: #FFBC94;
+  --color-warn: #ff8c42;
 
 	/*Neutrals*/
 	--color-black: #121212;
