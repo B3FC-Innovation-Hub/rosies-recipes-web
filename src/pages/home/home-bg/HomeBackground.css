@@ -15,7 +15,7 @@
     flex-direction: row;
     width: 300px;
     height: inherit;
-    z-index: -1;
+    z-index: -2;
 }
 
 .stripes.darker {
@@ -39,38 +39,54 @@
 }
 
 .images-container {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
     height: 100%;
+    width: 14rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
 }
 
-.images-container > .sphere:nth-child(1) {
-    top: 10%;
-    right: 20px;
+.images-container >.sphere {
+    position: relative;
+    justify-content: space-between;
+    animation: lightBounce 2s cubic-bezier(0.12, 0, 0.39, 0)
 }
 
-.images-container > .sphere:nth-child(2) {
-    top: 50%;
-    right: 60px;
+.images-container >.sphere:first-child {
+    display: flex;
+    align-self: flex-end;
 }
 
-.images-container > .sphere:nth-child(3) {
-    top: 80%;
-    right: 40px;
+.images-container >.sphere:nth-child(2){
+    display: flex;
+    align-self: flex-start;
 }
 
-@media screen and (max-width: 460px) {
+.images-container >.sphere:last-child {
+    display: flex;
+    align-self: flex-end;
+}
+
+
+@media screen and (max-width: 1200px) {
     .stripes {
         width: 30%;
     }
-
-    .images-container {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        padding: 40px;
-        transform: translate(100px, -60px) scale(0.7);
-    }
 }
+
+@keyframes lightBounce 
+ {
+    0% {
+		top: 8%;
+        opacity: 0.1;
+	}
+	50% {
+        opacity: 0.5;
+	}
+	100% {
+		top: 0;
+        opacity: 1;
+	}
+ }

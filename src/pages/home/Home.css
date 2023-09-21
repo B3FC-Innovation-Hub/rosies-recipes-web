@@ -18,16 +18,18 @@
     background-color: var(--color-primary-ultra-light);
     color: var(--color-primary-darker);
     flex-direction: column;
+    justify-content: center;
 }
 
 .home-unauthenticated {
     z-index: 2;
     display: flex;
-    height: 100%;
-    max-width: 50%;
     justify-content: center;
     align-self: center;
+    padding: 12px;
     flex-direction: column;
+    background-color: var(--color-warn-light);
+    border-radius: 20px;
 }
 
 .home-container-content {
